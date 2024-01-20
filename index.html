@@ -3,87 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fusion Website</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous">
-    <link href="styles.css" rel="stylesheet">
+    <title>Fusion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .svg-circle {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translate(25%, 25%);
+        }
+    </style>
 </head>
-<body>
-<div class="container my-5">
-    <!-- SVG Circle -->
-    <div class="d-flex justify-content-start">
-        <svg height="100" width="100">
-            <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="3" fill="none"/>
-        </svg>
-        <!-- Navigation Placeholder -->
-        <div class="ml-auto">Policy About</div>
-    </div>
+<body class="bg-white text-gray-900 relative">
+
+<!-- SVG Circle -->
+<svg class="svg-circle">
+    <circle cx="50" cy="50" r="50" fill="#6ee7b7"/>
+</svg>
+
+<div class="container mx-auto px-4">
+    <!-- Top navigation -->
+    <nav class="flex justify-end py-4">
+        <a href="#" class="text-lg font-semibold mx-2">Policy</a>
+        <a href="#" class="text-lg font-semibold mx-2">About</a>
+    </nav>
 
     <!-- Title -->
-    <h1 class="my-4">Fusion</h1>
+    <h1 class="text-5xl font-bold text-center my-6">Fusion</h1>
 
-    <!-- Vision -->
-    <div class="my-4">
-        <h2>Our vision</h2>
-        <p>Lorem ipsum dolor si remnibat</p>
+    <!-- Vision Section -->
+    <div class="text-center my-10">
+        <h2 class="text-2xl font-semibold underline decoration-blue-500">Our vision</h2>
+        <p class="text-lg mt-2">Lorem ipsum dolor si remnibat</p>
     </div>
 
-    <!-- Values -->
-    <!-- Values -->
-    <div class="my-4">
-        <h2>Values</h2>
-        <div class="row text-center">
-            <!-- Cards -->
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Liberty</h5>
-                    </div>
-                </div>
+    <!-- Values Section -->
+    <div class="text-center my-10">
+        <h2 class="text-2xl font-semibold underline decoration-purple-500">Values</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <!-- Value Cards -->
+            <div class="bg-green-300 p-4 rounded-lg shadow-md">
+                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Liberty'"
+                     class="mx-auto mb-2">
+                <h3 class="font-semibold">Liberty</h3>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Advancement</h5>
-                    </div>
-                </div>
+            <div class="bg-green-300 p-4 rounded-lg shadow-md">
+                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Advancement'"
+                     class="mx-auto mb-2">
+                <h3 class="font-semibold">Advancement</h3>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Environment</h5>
-                    </div>
-                </div>
+            <div class="bg-green-300 p-4 rounded-lg shadow-md">
+                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
+                     class="mx-auto mb-2">
+                <h3 class="font-semibold">Environment</h3>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Safety</h5>
-                    </div>
-                </div>
+            <div class="bg-green-300 p-4 rounded-lg shadow-md">
+                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Safety'"
+                     class="mx-auto mb-2">
+                <h3 class="font-semibold">Safety</h3>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Harmony</h5>
-                    </div>
-                </div>
+            <div class="bg-green-300 p-4 rounded-lg shadow-md">
+                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Harmony'"
+                     class="mx-auto mb-2">
+                <h3 class="font-semibold">Harmony</h3>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <h5 class="card-title">Equity</h5>
-                    </div>
-                </div>
+            <div class="bg-green-300 p-4 rounded-lg shadow-md">
+                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Equity'"
+                     class="mx-auto mb-2">
+                <h3 class="font-semibold">Equity</h3>
             </div>
         </div>
     </div>
-
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous">
-</script>
+
 </body>
 </html>
