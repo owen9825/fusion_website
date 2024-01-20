@@ -11,19 +11,33 @@ body {
     transform: translate(25%, 25%);
 }
 
+.container {
+  max-width: 700px; /* or the width of your cards container */
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .logo-wrapper {
-  margin-left: 28%;
-  width: 72%;
-  max-height: 105px;
+  // todo: align right
+  display: block;
+  width: 65%;
+  height: 0;
   padding-bottom: calc(65% * (166 / 736));
-  position: relative;
-  height: 0; /* This is important to ensure the padding-bottom dictates the height */
+  position: relative; /* It will be relative to the container now */
 }
 
 .logo-wrapper img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: auto;
+}
+
+.vision-section {
+  /* No changes needed here if it's already correctly aligned */
+}
+
+/* Ensure the value cards are within a container that controls their width */
+.values-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Adjust gap as needed */
 }
