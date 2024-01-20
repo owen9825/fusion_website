@@ -12,8 +12,9 @@ body {
 }
 
 .logo-wrapper {
-  margin-left: 23%;
-  width: 65%;
+  margin-left: 28%;
+  width: 72%;
+  max-height: 105px;
   padding-bottom: calc(65% * (166 / 736));
   position: relative;
   height: 0; /* This is important to ensure the padding-bottom dictates the height */
