@@ -1,87 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fusion</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        .svg-circle {
-            width: 100px;
-            height: 100px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transform: translate(25%, 25%);
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fusion</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  .svg-circle {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(25%, 25%);
+  }
+</style>
 </head>
 <body class="bg-white text-gray-900 relative">
 
 <!-- SVG Circle -->
 <svg class="svg-circle">
-    <circle cx="50" cy="50" r="50" fill="#6ee7b7"/>
+  <circle cx="50" cy="50" r="50" fill="#6ee7b7" />
 </svg>
 
 <div class="container mx-auto px-4">
-    <!-- Top navigation -->
-    <nav class="flex justify-end py-4">
-        <a href="#" class="text-lg font-semibold mx-2">Policy</a>
-        <a href="#" class="text-lg font-semibold mx-2">About</a>
-    </nav>
+  <!-- Top navigation -->
+  <nav class="flex justify-end py-4">
+    <a href="#" class="text-lg font-semibold mx-2">Policy</a>
+    <a href="#" class="text-lg font-semibold mx-2">About</a>
+  </nav>
 
-    <!-- Title -->
-    <h1 class="text-5xl font-bold text-center my-6">Fusion</h1>
+  <!-- Title -->
+  <h1 class="text-5xl font-bold my-6">Fusion</h1>
 
-    <!-- Vision Section -->
-    <div class="text-center my-10">
-        <h2 class="text-2xl font-semibold underline decoration-blue-500">Our vision</h2>
-        <p class="text-lg mt-2">Lorem ipsum dolor si remnibat</p>
+  <!-- Vision Section -->
+  <div class="my-10">
+    <h2 class="text-2xl font-semibold underline decoration-blue-500">Our vision</h2>
+    <p class="text-lg mt-2">Lorem ipsum dolor si remnibat</p>
+  </div>
+
+  <!-- Values Section -->
+  <div class="my-10">
+    <h2 class="text-2xl font-semibold underline decoration-purple-500">Values</h2>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+      <!-- Value Cards -->
+      <div class="bg-green-300 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Liberty'" class="mx-auto mb-2">
+        <h3 class="font-semibold text-left">Liberty</h3>
+      </div>
+      <div class="bg-green-300 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Advancement'" class="mx-auto mb-2">
+        <h3 class="font-semibold text-left">Advancement</h3>
+      </div>
+      <div class="bg-green-300 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'" class="mx-auto mb-2">
+        <h3 class="font-semibold text-left">Environment</h3>
+      </div>
+      <div class="bg-green-300 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Safety'" class="mx-auto mb-2">
+        <h3 class="font-semibold text-left">Safety</h3>
+      </div>
+      <div class="bg-green-300 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Harmony'" class="mx-auto mb-2">
+        <h3 class="font-semibold text-left">Harmony</h3>
+      </div>
+      <div class="bg-green-300 p-4 rounded-lg shadow-md">
+        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Equity'" class="mx-auto mb-2">
+        <h3 class="font-semibold text-left">Equity</h3>
+      </div>
     </div>
-
-    <!-- Values Section -->
-    <div class="text-center my-10">
-        <h2 class="text-2xl font-semibold underline decoration-purple-500">Values</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <!-- Value Cards -->
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Liberty'"
-                     class="mx-auto mb-2">
-                <h3 class="font-semibold">Liberty</h3>
-            </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Advancement'"
-                     class="mx-auto mb-2">
-                <h3 class="font-semibold">Advancement</h3>
-            </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
-                     class="mx-auto mb-2">
-                <h3 class="font-semibold">Environment</h3>
-            </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Safety'"
-                     class="mx-auto mb-2">
-                <h3 class="font-semibold">Safety</h3>
-            </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Harmony'"
-                     class="mx-auto mb-2">
-                <h3 class="font-semibold">Harmony</h3>
-            </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Equity'"
-                     class="mx-auto mb-2">
-                <h3 class="font-semibold">Equity</h3>
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
 
 </body>
