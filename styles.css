@@ -12,17 +12,17 @@ body {
 }
 
 .logo-wrapper {
-    margin-left: 23%;
-    width: 65%;
-    aspect-ratio: calc(736/166);
-    padding-bottom: calc(45% * (166 / 736));
-    position: relative;
+  margin-left: 23%;
+  width: 65%;
+  padding-bottom: calc(65% * (166 / 736));
+  position: relative;
+  height: 0; /* This is important to ensure the padding-bottom dictates the height */
 }
 
 .logo-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
 }
