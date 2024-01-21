@@ -35,20 +35,20 @@ body {
 @media (min-width: 768px) { /* This corresponds to Tailwind's 'md' breakpoint */
   .hero-imagery {
     display: flex;
-  }
-  .image-container, .video-container {
-    flex: 1; /* This makes both children flex and share the available space */
-  }
-  .video-container {
-    max-width: 70%;
-    flex:none;
+    align-items: stretch; /* This will stretch the children to fill the container */
   }
   .image-container {
-    max-width: 30%;
+    width: 30%;
+    flex-shrink: 0; /* Prevents the image container from shrinking */
+    overflow: hidden; /* Hides the overflow of the image */
   }
-  .hero-imagery img {
-    object-fit: cover; /* This will cover the height of the video while maintaining the aspect ratio */
-    height: 100%; /* This will stretch the image to match the video height */
+  .video-container {
+    width: 70%; /* Set the width instead of max-width to force the 70% */
+    flex-shrink: 0; /* Prevents the video container from shrinking */
+  }
+  .image-container img, .video-container iframe {
+    height: 100%; /* This will stretch the image and iframe to fill their containers */
+    object-fit: cover; /* Ensures the image covers the full area, cropping as necessary */
   }
 }
 
