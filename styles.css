@@ -44,8 +44,6 @@ body {
     width:100%;
 }
 
-
-
 .ratio-560x315::before {
   content: "";
   display: block;
@@ -59,13 +57,42 @@ body {
   height: 100%;
 }
 
-.vision-section {
-    /* No changes needed here if it's already correctly aligned */
-}
-
 /* Ensure the value cards are within a container that controls their width */
 .values-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Adjust gap as needed */
+}
+
+/* Custom styles for h2 elements */
+.h2-style {
+  font-weight: bold;
+  position: relative;
+  display: inline-block; /* Allows the pseudo-element to align with text */
+}
+
+.h2-style::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px; /* Thickness of the underline */
+  background-color: currentColor; /* Use the color of the text */
+  position: absolute;
+  bottom: -10px; /* Adjust the position as needed */
+  left: 0;
+}
+
+/* Cyan heading */
+.h2-cyan::after {
+  background-color: #00BCD4; /* Cyan color */
+}
+
+/* Magenta heading */
+.h2-magenta::after {
+  background-color: #FF00FF; /* Magenta color */
+}
+
+/* Pink heading */
+.h2-pink::after {
+  background-color: #FFC0CB; /* Pink color */
 }
