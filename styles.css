@@ -91,6 +91,7 @@ header {
     max-height: 500px;
     overflow: hidden;
     width: 100%;
+    z-index: 0;
 }
 
 .video {
@@ -99,10 +100,11 @@ header {
     max-width: calc(max(70vw, 560px));
 }
 
-.video > iframe {
+.video iframe {
     height: 100%;
     aspect-ratio: calc(560 / 315);
     width: auto;
+    z-index: 2;
 }
 
 /* Ensure the value cards are within a container that controls their width */
