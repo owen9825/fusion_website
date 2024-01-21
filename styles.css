@@ -65,6 +65,7 @@ header {
     height: 0;
     padding-bottom: calc(65% * (166 / 736));
     position: relative; /* It will be relative to the container now */
+    margin-left: auto;
 }
 
 .logo-wrapper img {
