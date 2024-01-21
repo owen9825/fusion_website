@@ -18,30 +18,44 @@ body {
 }
 
 nav {
-  display: flex;
-  justify-content: space-between; /* This will space out the nav-left and nav-right */
-  padding-top: 20px;
+    width: 80%;
+    margin-left: auto;  /* Push to right */
+    background: #e0e0e0;
+    box-shadow: inset 0px 4px 2px -2px rgba(255, 255, 255, 0.8), /* Top inner shadow */ inset 0px -4px 2px -2px rgba(0, 0, 0, 0.1); /* Bottom inner shadow */
+    display: flex;
+    justify-content: space-between; /* This will space out the nav-left and nav-right */
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
-nav > ul {
-    list-style: none;  /* Remove bullets */
+nav ul {
+    list-style: none; /* Remove bullets */
     padding: 15px;
     border-radius: 15px;
-    background-color: rgba(230, 202, 243, 0.4);
+    margin: 0;
 }
 
-nav > ul > li {
-    display: inline;  /* Horizontal list */
+nav li {
+    display: inline; /* Horizontal list */
     margin-right: 20px;
     padding: 7px;
     border-radius: 15px;
     transition: background-color 0.00s ease-in-out, transform 0.4s ease-in-out;
 }
 
-nav > ul > li > a {
-    text-decoration: none;  /* Remove underline from links */
-    color: white;
-    font-weight: bold; // Add emphasis
+nav a {
+    text-decoration: none; /* Removes the underline from links */
+    color: #333; /* Dark grey color for the text, adjust as needed */
+    font-weight: bold; /* Makes the font bold */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    color: #000; /* Color of text on hover, change as you like */
+}
+
+header {
+    padding-top: 15px;
 }
 
 .logo-wrapper {
