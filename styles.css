@@ -12,18 +12,18 @@ body {
 }
 
 .container {
-    max-width: 700px; /* or the width of your cards container */
+    max-width: 750px; /* or the width of your cards container */
     margin-right: auto;
     margin-left: auto;
 }
 
 .logo-wrapper {
-  /* todo: align right*/
-  display: block;
-  width: 65%;
-  height: 0;
-  padding-bottom: calc(65% * (166 / 736));
-  position: relative; /* It will be relative to the container now */
+    /* todo: align right*/
+    display: block;
+    width: 65%;
+    height: 0;
+    padding-bottom: calc(65% * (166 / 736));
+    position: relative; /* It will be relative to the container now */
 }
 
 .logo-wrapper img {
@@ -31,21 +31,27 @@ body {
     height: auto;
 }
 
+.hero .video, .hero img {
+    height: 25vw;
+}
+
 .hero img {
-  object-fit: cover; /* Cover the area of the container */
-  max-height: 500px;
-  width: 100%;
+    object-fit: cover; /* Cover the area of the container */
+    max-height: 500px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .video {
-    display:grid;
+    display: grid;
     place-items: center;
     max-width: calc(max(70vw, 560px));
 }
+
 .video > iframe {
-  width: 100%;
-    aspect-ratio: calc(560/315);
-    height: auto;
+    height: 100%;
+    aspect-ratio: calc(560 / 315);
+    width: auto;
 }
 
 /* Ensure the value cards are within a container that controls their width */
@@ -57,33 +63,33 @@ body {
 
 /* Custom styles for h2 elements */
 .h2-style {
-  font-weight: bold;
-  position: relative;
-  display: inline-block; /* Allows the pseudo-element to align with text */
+    font-weight: bold;
+    position: relative;
+    display: inline-block; /* Allows the pseudo-element to align with text */
 }
 
 .h2-style::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px; /* Thickness of the underline */
-  background-color: currentColor; /* Use the color of the text */
-  position: absolute;
-  bottom: -10px; /* Adjust the position as needed */
-  left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px; /* Thickness of the underline */
+    background-color: currentColor; /* Use the color of the text */
+    position: absolute;
+    bottom: -10px; /* Adjust the position as needed */
+    left: 0;
 }
 
 /* Cyan heading */
 .h2-cyan::after {
-  background-color: #00BCD4; /* Cyan color */
+    background-color: #00BCD4; /* Cyan color */
 }
 
 /* Magenta heading */
 .h2-magenta::after {
-  background-color: #FF00FF; /* Magenta color */
+    background-color: #FF00FF; /* Magenta color */
 }
 
 /* Pink heading */
 .h2-pink::after {
-  background-color: #FFC0CB; /* Pink color */
+    background-color: #FFC0CB; /* Pink color */
 }
