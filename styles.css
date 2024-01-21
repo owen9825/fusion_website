@@ -12,9 +12,36 @@ body {
 }
 
 .container {
-    max-width: 750px; /* or the width of your cards container */
+    max-width: 750px;
     margin-right: auto;
     margin-left: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* This will space out the nav-left and nav-right */
+  padding-top: 20px;
+}
+
+nav > ul {
+    list-style: none;  /* Remove bullets */
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(230, 202, 243, 0.4);
+}
+
+nav > ul > li {
+    display: inline;  /* Horizontal list */
+    margin-right: 20px;
+    padding: 7px;
+    border-radius: 15px;
+    transition: background-color 0.00s ease-in-out, transform 0.4s ease-in-out;
+}
+
+nav > ul > li > a {
+    text-decoration: none;  /* Remove underline from links */
+    color: white;
+    font-weight: bold; // Add emphasis
 }
 
 .logo-wrapper {
