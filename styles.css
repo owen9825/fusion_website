@@ -31,49 +31,17 @@ body {
     height: auto;
 }
 
-/* Custom styles for hero imagery */
-/* Custom styles for hero imagery */
-@media (min-width: 768px) {
-    .hero-imagery {
-        display: flex;
-    }
-
-    .image-container {
-        width: 30%;
-        position: relative; /* Establish a positioning context */
-        padding-top: calc(315 / 560 * 100%); /* This sets the height based on the aspect ratio */
-    }
-
-    .image-container::before {
-        content: "";
-        display: block;
-        padding-top: calc(315 / 560 * 100%); /* Height relative to width */
-    }
-
-    .image-container img {
-        position: absolute; /* Position the image absolutely within its container */
-        bottom: 0; /* Align it to the bottom */
-        left: 0; /* Align it to the left */
-        width: 100%; /* Stretch it to the full width of the container */
-        max-width: none;
-        max-height: 100%;
-        height: 100%; /* Stretch it to the full height of the container */
-        object-fit: cover; /* Ensures the image covers the area, cropping as necessary */
-    }
-
-    .video-container {
-        width: 70%; /* The video container takes up the rest of the space */
-    }
+.ratio-560x315::before {
+  content: "";
+  display: block;
+  padding-top: calc(315 / 560 * 100%);
 }
-
-
-.hero-imagery iframe {
-    /* iframe gets replaced, so it can't have :before/:after elements or anything above it.
-     The aspect ratio is taken from the width and height suggested when copying the embedding HTML from
-     YouTube. Either the height or ratio must be set explicitly, as the iframe has no inherent, native height. */
-    width: 100%;
-    aspect-ratio: 560/315;
-    height: auto;
+.ratio-560x315 > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .vision-section {

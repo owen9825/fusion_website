@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fusion</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="rings.css">
 </head>
@@ -23,7 +23,7 @@
 
 <div class="container">
     <!-- Top navigation -->
-    <nav class="flex justify-end py-4">
+    <nav class="d-flex justify-end py-4">
         <a href="#" class="text-lg font-semibold mx-2">Policy</a>
         <a href="#" class="text-lg font-semibold mx-2">About</a>
     </nav>
@@ -34,61 +34,88 @@
     </div>
 
     <!-- Hero imagery section with responsive classes -->
-    <div class="hero-imagery my-10 md:flex md:items-end">
-        <div class="image-container md:w-3/10">
-            <img src="images/forest portal.webp" alt="Forest portal" class="rounded-lg h-full object-cover">
+    <div class="row mb-4 align-items-end">
+        <div class="col-md-4">
+            <img src="images/forest portal.webp" alt="Forest portal" class="img-fluid rounded">
         </div>
-        <div class="video-container pl-2 md:w-7/10">
-            <iframe class="rounded-lg"
-                    src="https://www.youtube.com/embed/KEgtPhTOAzE?si=Qp0de8BTTdjWaiYW"
-                    title="Introducing Fusion"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-            </iframe>
+        <div class="col-md-8">
+            <div class="ratio ratio-560x315 rounded">
+                <iframe src="https://www.youtube.com/embed/KEgtPhTOAzE?si=Qp0de8BTTdjWaiYW"
+                        title="Introducing Fusion"
+                        class="rounded"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                </iframe>
+            </div>
         </div>
     </div>
 
     <!-- Vision Section -->
-    <div class="my-10">
-        <h2 class="text-2xl font-semibold underline decoration-blue-500">Our vision</h2>
-        <p class="text-lg mt-2">Lorem ipsum dolor si remnibat</p>
+    <div class="mb-4">
+        <h2 class="h3 fw-bold text-decoration-underline text-primary mb-2">Our vision</h2>
+        <p>Lorem ipsum dolor si remnibat</p>
     </div>
 
     <!-- Values Section -->
-    <div class="my-10">
-        <h2 class="text-2xl font-semibold underline decoration-purple-500">Values</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
-            <!-- Value Cards -->
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Liberty'"
+    <!-- Values -->
+    <div class="my-4">
+        <h2>Values</h2>
+        <div class="row text-center">
+            <!-- Cards -->
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
                      class="mx-auto mb-2">
-                <h3 class="font-semibold text-left">Liberty</h3>
+                        <h5 class="card-title">Liberty</h5>
+                    </div>
+                </div>
             </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Advancement'"
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
                      class="mx-auto mb-2">
-                <h3 class="font-semibold text-left">Advancement</h3>
+                        <h5 class="card-title">Advancement</h5>
+                    </div>
+                </div>
             </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
                      class="mx-auto mb-2">
-                <h3 class="font-semibold text-left">Environment</h3>
+                        <h5 class="card-title">Environment</h5>
+                    </div>
+                </div>
             </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Safety'"
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
                      class="mx-auto mb-2">
-                <h3 class="font-semibold text-left">Safety</h3>
+                        <h5 class="card-title">Safety</h5>
+                    </div>
+                </div>
             </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Harmony'"
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
                      class="mx-auto mb-2">
-                <h3 class="font-semibold text-left">Harmony</h3>
+                        <h5 class="card-title">Harmony</h5>
+                    </div>
+                </div>
             </div>
-            <div class="bg-green-300 p-4 rounded-lg shadow-md">
-                <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Equity'"
+            <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <img src="https://placehold.co/150x150" alt="Placeholder image for the value 'Environment'"
                      class="mx-auto mb-2">
-                <h3 class="font-semibold text-left">Equity</h3>
+                        <h5 class="card-title">Equity</h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
