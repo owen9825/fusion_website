@@ -1,3 +1,11 @@
+:root {
+    --fusion-aquamarine: #5effd8;
+    --fusion-pink: #ff7fff;
+    --fusion-blue: #5facff;
+    --fusion-purple: #c34df1;
+    --fusion-gray: #949494;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -12,7 +20,7 @@ body {
 }
 
 .container {
-    max-width: 750px;
+    max-width: 800px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -114,35 +122,76 @@ header {
     gap: 20px; /* Adjust gap as needed */
 }
 
-/* Custom styles for h2 elements */
-.h2-style {
-    font-weight: bold;
+/* Fixed height for each card */
+/*.card-body {
+    height: 200px;
+}*/
+
+.card-body img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.card-title {
+    margin-bottom: 0;
+}
+
+.h-underline {
     position: relative;
     display: inline-block; /* Allows the pseudo-element to align with text */
 }
 
-.h2-style::after {
+.h-underline::after {
     content: '';
     display: block;
     width: 100%;
-    height: 4px; /* Thickness of the underline */
     background-color: currentColor; /* Use the color of the text */
     position: absolute;
-    bottom: -10px; /* Adjust the position as needed */
     left: 0;
 }
 
+h2 {
+    font-weight: bold;
+}
+
+h2.h-underline {
+    padding-bottom: 5px;
+}
+
+h2::after, h3:after, h4:after {
+    height: 4px; /* Thickness of the underline */
+}
+
+h5.h-underline {
+    padding-bottom: 3px;
+}
+
+.h-underline h5::after {
+    height: 3px;
+}
+
 /* Cyan heading */
-.h2-cyan::after {
-    background-color: #00BCD4; /* Cyan color */
+.h-aquamarine::after {
+    background-color: var(--fusion-aquamarine);
 }
 
 /* Magenta heading */
-.h2-magenta::after {
-    background-color: #FF00FF; /* Magenta color */
+.h-pink::after {
+    background-color: var(--fusion-pink);
 }
 
 /* Pink heading */
-.h2-pink::after {
-    background-color: #FFC0CB; /* Pink color */
+.h-blue::after {
+    background-color: var(--fusion-blue);
+}
+
+.h-purple::after {
+    background-color: var(--fusion-purple);
+}
+
+.h-gray::after {
+    background-color: var(--fusion-gray);
 }
