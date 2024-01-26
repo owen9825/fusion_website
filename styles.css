@@ -173,17 +173,14 @@ h5.h-underline {
     height: 3px;
 }
 
-/* Cyan heading */
 .h-aquamarine::after {
     background-color: var(--fusion-aquamarine);
 }
 
-/* Magenta heading */
 .h-pink::after {
     background-color: var(--fusion-pink);
 }
 
-/* Pink heading */
 .h-blue::after {
     background-color: var(--fusion-blue);
 }
@@ -194,4 +191,8 @@ h5.h-underline {
 
 .h-gray::after {
     background-color: var(--fusion-gray);
+}
+
+.background-blue {
+    background-color: var(--fusion-blue);
 }

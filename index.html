@@ -150,12 +150,24 @@
         <h2 class="h2-style h-blue h-underline">Stay in the Loop</h2>
         <div class="row text-center">
             <div class="col-sm-12 col-md-6">
-                <div class="card shadow">
-                    <div class="card-body">
-                        Fill in the form
-                        <button>Submit</button>
+                <div class="card glass">
+                  <form>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="firstNameInput" placeholder="First name">
+                      <label for="firstNameInput">First name</label>
                     </div>
+                    <div class="form-floating">
+                      <input type="text" class="form-control" id="lastNameInput" placeholder="Last name">
+                      <label for="lastNameInput">Last name</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                      <label for="emailInput">Email address</label>
+                    </div>
+                    <button class="btn btn-primary background-blue w-100 py-2" type="submit">Subscribe</button>
+                  </form>
                 </div>
+                <p class="align-items-start py-4">We will only use this information to send you newsletters and campaign updates.</p>
             </div>
             <div class="col-sm-12 col-md-6">
             <img src="images/teenagers.png" alt="A woman at a blue plasma portal" class="rounded w-100">
