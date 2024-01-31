@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="bg-canvas" class="bg-white">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="rings.css">
 </head>
-<body class="bg-white text-gray-900 relative">
+<body class="bg-transparent bg-viewport text-gray-900 relative">
 
 <!-- SVG Circle -->
 <div class="circle">
@@ -164,7 +164,7 @@
                       <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
                       <label for="emailInput">Email address</label>
                     </div>
-                    <button class="btn btn-primary background-blue w-100 py-2" type="submit">Subscribe</button>
+                    <button class="btn btn-primary bg-blue w-100 py-2" type="submit">Subscribe</button>
                   </form>
                 </div>
                 <p class="align-items-start py-4">We will only use this information to send you newsletters and campaign updates.</p>
@@ -174,8 +174,46 @@
         </div>
         </div>
     </div>
+    <div class="container mt-5">
+        <h4>Background Colour</h4>
 
+        <!-- Radio buttons for background options -->
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="backgroundOption" id="white" value="bg-white" checked>
+            <label class="form-check-label" for="white">White</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="backgroundOption" id="cicada" value="bg-cicada">
+            <label class="form-check-label" for="cicada">Cicada</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="backgroundOption" id="blue-stripes" value="bg-blue-stripes">
+            <label class="form-check-label" for="blue-stripes">Blue Stripes</label>
+        </div>
+    </div>
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("Adding event listeners");
+    // Function to change the background
+    function changeBackground() {
+        const selectedValue = this.value; // 'this' refers to the radio button that was clicked
+        console.log("The background shall be changed to " + selectedValue);
+        const backgroundCanvas = document.getElementById('bg-canvas');
 
+        // Remove previous background classes
+        backgroundCanvas.classList.remove('bg-white', 'bg-cicada', 'bg-blue-stripes');
+
+        // Add the selected background class
+        backgroundCanvas.classList.add(selectedValue);
+    }
+
+    // Add click event listener to each radio button
+    const radios = document.getElementsByName('backgroundOption');
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener('click', changeBackground);
+    }
+});
+</script>
 </body>
 </html>
