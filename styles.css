@@ -218,8 +218,14 @@ h5.h-underline {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
+.bg-blue-purple-gradient {
+  background: linear-gradient(to bottom right, #bffeef, #e9a8fa);
+}
+
 /* todo: turbulence: https://codepen.io/cobra_winfrey/pen/eYOXOdB */
 
 /* todo: marble background? */
 
 /* todo: charm UI https://codepen.io/TWilson/pen/jOdWqbZ */
+
+/*
