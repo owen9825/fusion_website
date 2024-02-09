@@ -222,6 +222,20 @@ h5.h-underline {
   background: linear-gradient(to bottom right, #bffeef, #e9a8fa);
 }
 
+.bg-pink-aether {
+  /* This was from https://fffuel.co/ffflux/ */
+  background-image: url('images/pink-aether.svg');
+  background-size: cover; /* Cover the entire area of the element */
+  background-position: center; /* Center the background image */
+}
+
+.bg-pink-mist {
+  /* This was from https://fffuel.co/ffflux/ */
+  background-image: url('images/pink-mist.svg');
+  background-size: cover; /* Cover the entire area of the element */
+  background-position: center; /* Center the background image */
+}
+
 /* todo: turbulence: https://codepen.io/cobra_winfrey/pen/eYOXOdB */
 
 /* todo: marble background? */

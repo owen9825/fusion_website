@@ -194,6 +194,14 @@
             <input class="form-check-input" type="radio" name="backgroundOption" id="blue-purple-gradient" value="bg-blue-purple-gradient">
             <label class="form-check-label" for="blue-purple-gradient">Blue-Purple Gradient</label>
         </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="backgroundOption" id="pink-aether" value="bg-pink-aether">
+            <label class="form-check-label" for="pink-aether">Pink Aether</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="backgroundOption" id="pink-mist" value="bg-pink-mist">
+            <label class="form-check-label" for="pink-mist">Pink Mist</label>
+        </div>
     </div>
 </div>
 <script>
@@ -206,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const backgroundCanvas = document.getElementById('bg-canvas');
 
         // Remove previous background classes
-        backgroundCanvas.classList.remove('bg-white', 'bg-cicada', 'bg-blue-stripes', 'bg-blue-purple-gradient');
+        backgroundCanvas.classList.remove('bg-white', 'bg-cicada', 'bg-blue-stripes', 'bg-blue-purple-gradient', 'bg-pink-aether');
 
         // Add the selected background class
         backgroundCanvas.classList.add(selectedValue);
