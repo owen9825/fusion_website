@@ -9,8 +9,6 @@
   width: 100%;
   overflow: hidden;
   border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
-  background: linear-gradient(to right, rgba(158, 236, 217, 0.25), rgba(137, 210, 238, 0.28), rgba(232, 201, 239, 0.4), rgba(211, 63, 117, 0.32), #DDD6F3);
-  background-size: 500% 100%;
   animation: blobber 135s 0s ease-in-out infinite, cobler 60s 0s ease-in-out infinite alternate;
 }
 .blob:after {
@@ -21,14 +19,20 @@
   right: 5px;
   bottom: 5px;
   left: 5px;
-  background-color: #000;
-  background-image: url(images/owenfm_cinematic_In_a_lush_ethereal_radiant_clearing_of_the_old_58d46a47-63dc-4fbf-afc9-3b761676302d.webp);
   background-repeat: no-repeat;
+  background: linear-gradient(to right, rgba(94, 255, 216, 0.78), rgba(95, 172, 255, 0.7), rgba(255, 127, 255, 0.7), rgba(195, 77, 241, 0.81), #DDD6F3);
   background-size: cover;
   background-position: center;
   mix-blend-mode: multiply;
-  animation: blobber 135s 0s ease-in-out infinite;
-    /*wobbler 60s 0s ease-in-out infinite alternate;/*/
+  animation: blobber 135s 0s ease-in-out infinite,
+    wobbler 10s 0s ease-in-out infinite alternate;
+  z-index: 1;
+}
+
+.blob img {
+  position: relative;
+  border-radius: inherit; /* Make sure the image also has rounded corners */
+  z-index: 2; /* Ensure the image is above the pseudo-element */
 }
 
 @keyframes blobber {
@@ -106,10 +110,10 @@
 }
 @keyframes wobbler {
   0% {
-    transform: rotateZ(8deg);
+    transform: rotateZ(15deg);
   }
   100% {
-    transform: rotateZ(-8deg);
+    transform: rotateZ(-15deg);
   }
 }
 
