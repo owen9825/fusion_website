@@ -1,11 +1,12 @@
 /* https://codepen.io/markmiscavage/pen/NoJEYG */
 .blob {
-  display: block;
+  display: flex; /* Updated from block to flex */
+  align-items: center; /* Ensure vertical centering */
+  justify-content: center; /* Ensure horizontal centering */
   position: relative;
-  justify-content: center;
   justify-items: center;
-  height: 100%;
-  aspect-ratio: 1;
+  height: max(100%, 200px);
+  width: 100%;
   overflow: hidden;
   border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
   background: linear-gradient(to right, rgba(158, 236, 217, 0.25), rgba(137, 210, 238, 0.28), rgba(232, 201, 239, 0.4), rgba(211, 63, 117, 0.32), #DDD6F3);
@@ -109,5 +110,11 @@
   }
   100% {
     transform: rotateZ(-8deg);
+  }
+}
+
+@media (max-width: 575.98px) { /* This targets screens smaller than the 'sm' breakpoint */
+  .blob-container {
+    height: 200px; /* Set a smaller fixed height for the blob's container on smaller screens */
   }
 }
