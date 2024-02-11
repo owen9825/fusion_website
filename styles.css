@@ -197,6 +197,16 @@ h5.h-underline {
     background-color: var(--fusion-blue);
 }
 
+.bg-purple {
+    background-color: var(--fusion-purple);
+    color: white;
+}
+
+.bg-purple:hover {
+    background-color: #a20dd7;
+    color:white;
+}
+
 .bg-cicada {
     /* https://codepen.io/yoksel/pen/vYZmbr */
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(70, 130, 180, 0.1428571429) 40%, rgba(70, 130, 180, 0.1428571429) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(70, 130, 180, 0.1428571429) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(70, 130, 180, 0.1428571429) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(154, 205, 50, 0.1666666667) 40%, rgba(154, 205, 50, 0.1666666667) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(154, 205, 50, 0.1666666667) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(154, 205, 50, 0.1666666667) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 215, 0, 0.2) 40%, rgba(255, 215, 0, 0.2) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(255, 215, 0, 0.2) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 215, 0, 0.2) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 105, 180, 0.25) 40%, rgba(255, 105, 180, 0.25) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(255, 105, 180, 0.25) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 105, 180, 0.25) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 69, 0, 0.3333333333) 40%, rgba(255, 69, 0, 0.3333333333) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(255, 69, 0, 0.3333333333) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 69, 0, 0.3333333333) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(220, 20, 60, 0.5) 40%, rgba(220, 20, 60, 0.5) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(220, 20, 60, 0.5) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(220, 20, 60, 0.5) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, violet 40%, violet 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, violet 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, violet 90%);
@@ -241,5 +251,3 @@ h5.h-underline {
 /* todo: marble background? */
 
 /* todo: charm UI https://codepen.io/TWilson/pen/jOdWqbZ */
-
-/*
