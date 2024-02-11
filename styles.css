@@ -4,6 +4,7 @@
     --fusion-blue: #5facff;
     --fusion-purple: #c34df1;
     --fusion-gray: #949494;
+    --underlining-duration: 0.55s;
 }
 
 body {
@@ -147,10 +148,19 @@ header {
 .h-underline::after {
     content: '';
     display: block;
-    width: 100%;
+    width: 0;  /* Start invisible */
     background-color: currentColor; /* Use the color of the text */
     position: absolute;
     left: 0;
+    transition: width var(--underlining-duration) ease-in;
+}
+
+.h-underline-animate::after {
+    width: 100%; /* Full underline */
+}
+
+.transition-delay::after {
+    transition-delay: calc(var(--underlining-duration)/2);
 }
 
 h2 {
@@ -162,7 +172,8 @@ h2.h-underline {
 }
 
 h2::after, h3:after, h4:after {
-    height: 4px; /* Thickness of the underline */
+    height: 5px; /* Thickness of the underline */
+    border-radius: 4px;
 }
 
 h5.h-underline {
