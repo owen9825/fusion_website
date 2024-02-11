@@ -60,7 +60,7 @@
 }
 
 .scrolling-grid {
-    --count: 6; /* The number of items you have */
+    --count: 7; /* The number of rows you have */
     --inset: 0; /* Controls the grid animation offset on entry/exit */
     --outset: 2.5;
     height: 100%;
@@ -70,7 +70,6 @@
     position: relative;
     display: grid;
     padding: 0 1rem;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 2rem;
     transition: transform 0.5s;
@@ -156,10 +155,12 @@
 .scrolling-grid li:nth-of-type(10) { --index: 4; }
 .scrolling-grid li:nth-of-type(11) { --index: 5; }
 .scrolling-grid li:nth-of-type(12) { --index: 5; }
+.scrolling-grid li:nth-of-type(13) { --index: 6; }
+.scrolling-grid li:nth-of-type(14) { --index: 6; }
 
 @container (width < 400px) {
     .scrolling-grid {
-        --count: 12;
+        --count: 14;
         --inset: 0;
         --outset: 3;
         grid-template-columns: 1fr;
@@ -177,6 +178,8 @@
     .scrolling-grid li:nth-of-type(10) { --index: 9; }
     .scrolling-grid li:nth-of-type(11) { --index: 10; }
     .scrolling-grid li:nth-of-type(12) { --index: 11; }
+    .scrolling-grid li:nth-of-type(13) { --index: 12; }
+    .scrolling-grid li:nth-of-type(14) { --index: 13; }
 
     .scrolling-grid li {
         --duration: calc(var(--speed) * 2);
