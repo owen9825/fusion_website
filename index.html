@@ -148,7 +148,7 @@
             </div>
         </div>
         <div class="col-sm-12 mt-5">
-            <img src="images/woman_at_blue_portal.webp" alt="A woman at a blue plasma portal" class="rounded w-100">
+            <img src="images/woman_at_blue_portal.webp" alt="A woman at a blue plasma portal" class="rounded w-100" id="plasma-person">
         </div>
     </div>
 </div>
@@ -157,7 +157,7 @@
         <div class="py-4 container">
             <h2 class="h2-style bg-aquamarine rounded py-2"><i><b>People like you</b></i></h2>
             <p class="bg-aquamarine rounded py-2">
-                <i>That's who can change Australia's future − voters who want what's best, and are prepared to take action.</i>
+                <i>That's who can change the future − voters who want what's best for Australia, and are prepared to take action.</i>
             </p>
             <div class="row">
                 <div class="col-sm-4">
@@ -464,6 +464,19 @@
     </div>
 
     <div class="container mt-5">
+        <h4>Plasma person</h4>
+
+        <!-- Radio buttons for background options -->
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="plasmaOption" id="man" value="images/man_at_portal.webp">
+            <label class="form-check-label" for="white">Man</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="plasmaOption" id="woman" value="images/woman_at_blue_portal.webp" checked>
+            <label class="form-check-label" for="white">Woman</label>
+        </div>
+    </div>
+    <div class="container mt-5">
         <h4>Background Colour</h4>
 
         <!-- Radio buttons for background options -->
@@ -516,9 +529,22 @@
         }
 
         // Add click event listener to each radio button
-        const radios = document.getElementsByName('backgroundOption');
-        for (var i = 0; i < radios.length; i++) {
-            radios[i].addEventListener('click', changeBackground);
+        const backgroundRadios = document.getElementsByName('backgroundOption');
+        for (var i = 0; i < backgroundRadios.length; i++) {
+            backgroundRadios[i].addEventListener('click', changeBackground);
+        }
+
+        function changePlasmaPerson() {
+            const selectedValue = this.value; // 'this' refers to the radio button that was clicked
+            console.log("The plasma image shall be changed to " + selectedValue);
+            const plasmaImg = document.getElementById('plasma-person');
+            plasmaImg.src = selectedValue;
+        }
+
+        // Add click event listener to each radio button
+        const plasmaRadios = document.getElementsByName('plasmaOption');
+        for (var i = 0; i < plasmaRadios.length; i++) {
+            plasmaRadios[i].addEventListener('click', changePlasmaPerson);
         }
     });
 </script>
