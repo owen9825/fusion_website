@@ -188,6 +188,26 @@ h5.h-underline {
     background-color: var(--fusion-aquamarine);
 }
 
+.bg-plasma {
+    background-image: url('images/horizontal_plasma.webp');
+    background-size: cover; /* Cover the entire area of the element */
+    background-position: center; /* Center the background image */
+}
+
+.bg-aquamarine {
+    background-color: rgba(138, 238, 216, 0.73);
+}
+
+.bg-aquamarine-transparent {
+    background-color: rgba(138, 238, 216, 0.24);
+    margin: 0;
+    padding: 0;
+}
+
+.bg-opal {
+    background-color: #46d3e0;
+}
+
 .h-pink::after {
     background-color: var(--fusion-pink);
 }
