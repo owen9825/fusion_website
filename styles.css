@@ -91,28 +91,15 @@ header {
     height: auto;
 }
 
-.hero .video, .hero img {
-    height: 25vw;
-}
-
-.hero img {
-    object-fit: cover; /* Cover the area of the container */
-    max-height: 500px;
-    overflow: hidden;
-    width: 100%;
-    z-index: 0;
-}
-
 .video {
     display: grid;
     place-items: center;
-    max-width: calc(max(70vw, 560px));
+    max-width: calc(max(90vw, 560px));
 }
 
 .video iframe {
-    height: 100%;
     aspect-ratio: calc(560 / 315);
-    width: auto;
+    width: 100%;
     z-index: 2;
 }
 
