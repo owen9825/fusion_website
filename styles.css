@@ -11,6 +11,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1, h2, h3, h4, h5, p {
+    /* Avoid things accidentally covering up our text */
+    z-index: 2;
+}
+
 .svg-circle {
     width: 100px;
     height: 100px;
@@ -100,7 +105,7 @@ header {
 .video iframe {
     aspect-ratio: calc(560 / 315);
     width: 100%;
-    z-index: 2;
+    z-index: 3;
 }
 
 /* Ensure the value cards are within a container that controls their width */

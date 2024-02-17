@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="blob.css">
     <link rel="stylesheet" href="glowing-button.css">
     <link rel="stylesheet" href="scrolling.css">
+    <link rel="stylesheet" href="ballots.css">
 </head>
 <body class="bg-transparent bg-viewport text-gray-900 relative">
 
@@ -95,6 +96,34 @@
         </div>
         <div class="col-sm-12 col-md-4">
             <h1 class="bg-aquamarine-transparent h-underline h-purple"><span><b>A grassroots movement</b></span> <span>with</span> <span><b><i>big ideas</i></b></span></h1>
+        </div>
+    </div>
+</div>
+<div class="w-100 container-fluid">
+    <div class="my-4 py-4 row glass">
+        <div class="col-sm-6">
+            <div class="ballot meander">
+                <h4>House of Representatives<br/>Ballot Paper</h4>
+                <h4>Victoria</h4>
+                <h3>Electoral Division of Melbourne</h3>
+                <p><u>Number the boxes from 1 to 5 in the order of your choice</u></p>
+                <ul>
+                    <li>
+                        Smith, John<br/>Liberal Party
+                    </li>
+                    <li>
+                        Jones, Sally<br/>Labor Party
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <h2 class="h-underline h-aquamarine">How voting for a <i>minor</i> party <i><b>maximises</b></i> your vote</h2>
+            <div>
+                <p>
+                    Sankey diagram here
+                </p>
+            </div>
         </div>
     </div>
 </div>
@@ -305,5 +334,9 @@
     });
 </script>
 <script src="underlining.js"></script>
+<!-- jQuery is needed for tilting -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="scripts/tilting.js"></script>
 </body>
 </html>
