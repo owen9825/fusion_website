@@ -34,7 +34,12 @@
     width: 50vw;
     padding: 40px;
     transform-style: preserve-3d;
-    background-image: url('images/Dunkley-1-scaled.jpg');
+    background-image: url('images/card_stock.svg');
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: #d3c6ae;
+    box-sizing: border-box;
+    color: #333;
     background-size: cover;
     background-position: center;
 }
@@ -53,4 +58,18 @@
     position: relative;
     z-index: 2;
     transform: translateZ(40px);
+}
+
+.link {
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .2;
+}
+.link:hover {
+  stroke-opacity: .5;
+}
+
+.sankey {
+    width: calc(max(60vw, 360px));
+    height: calc(max(20vh, 480px));
 }

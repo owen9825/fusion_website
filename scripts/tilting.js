@@ -14,10 +14,8 @@
         scale: 0.9,
         reset: false
     }).on('tilt.mouseEnter', function() {
-        console.log("Mouse over tilting!");
         // Remove initial tilt when tilt.js takes over
         $(this).css('transform','');
         $(this).removeClass('meander'); // The animation interferes with tilt.js' interaction with the user.
     });
-
 }(jQuery));
