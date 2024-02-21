@@ -196,6 +196,10 @@ h5.h-underline {
     background-color: rgba(138, 238, 216, 0.73);
 }
 
+button.bg-aquamarine:hover {
+    background-color: rgba(89, 217, 217, 0.85);
+}
+
 .bg-aquamarine-transparent {
     background-color: rgba(138, 238, 216, 0.24);
     margin: 0;
@@ -234,6 +238,10 @@ h5.h-underline {
 .bg-purple:hover {
     background-color: #a20dd7;
     color:white;
+}
+
+button.bg-purple, button.bg-purple:hover {
+    border-color: #780a9d;
 }
 
 .bg-cicada {

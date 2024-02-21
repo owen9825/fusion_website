@@ -1,0 +1,113 @@
+<svg height="400" width="800" xmlns="http://www.w3.org/2000/svg">
+<title>Your Diagram Title</title>
+<!-- Generated with SankeyMATIC (https://sankeymatic.com/build/): 21/02/2024 23:22:38 -->
+<g transform="translate(68.6075,18)">
+<g id="sankey_flows">
+<path id="flow14" d="M448.42372 64.12264C553.02965 64.12264 553.02965 72.94351 657.63559 72.94351" fill="none" stroke-width="99.4752" stroke="#C44545" opacity="0.45"><title>Red round 3 → Red: 36</title></path>
+<path id="flow15" d="M448.42372 287.05264C553.02965 287.05264 553.02965 230.69211 657.63559 230.69211" fill="none" stroke-width="96.712" stroke="#c34df1" opacity="0.45"><title>Purple round 3 → Purple 👑: 35</title></path>
+<path id="flow8" d="M229.21186 54.87214C333.81779 54.87214 333.81779 59.97784 438.42372 59.97784" fill="none" stroke-width="91.1856" stroke="#C44545" opacity="0.45"><title>Red round 2 → Red round 3: 33</title></path>
+<path id="flow0" d="M10 47.874C114.60593 47.874 114.60593 50.72734 219.21186 50.72734" fill="none" stroke-width="82.896" stroke="#C44545" opacity="0.45"><title>Red 1st pref → Red round 2: 30</title></path>
+<path id="flow9" d="M229.21186 160.11994C333.81779 160.11994 333.81779 173.51524 438.42372 173.51524" fill="none" stroke-width="82.896" stroke="#3B74B6" opacity="0.45"><title>Blue round 2 → Blue round 3: 30</title></path>
+<path id="flow1" d="M10 143.4506C114.60593 143.4506 114.60593 154.59354 219.21186 154.59354" fill="none" stroke-width="71.8432" stroke="#3B74B6" opacity="0.45"><title>Blue 1st pref → Blue round 2: 26</title></path>
+<path id="flow10" d="M229.21186 322.25954C333.81779 322.25954 333.81779 267.71024 438.42372 267.71024" fill="none" stroke-width="58.0272" stroke="#c34df1" opacity="0.45"><title>Purple round 2 → Purple round 3: 21</title></path>
+<path id="flow16" d="M448.42372 155.55444C553.02965 155.55444 553.02965 302.53531 657.63559 302.53531" fill="none" stroke-width="46.9744" stroke="#79A5D1" opacity="0.45"><title>Blue round 3 → Purple 👑: 17</title></path>
+<path id="flow2" d="M10 218.3032C114.60593 218.3032 114.60593 240.49894 219.21186 240.49894" fill="none" stroke-width="41.448" stroke="#3F8243" opacity="0.45"><title>Green 1st pref → Green round 2: 15</title></path>
+<path id="flow11" d="M229.21186 240.49894C333.81779 240.49894 333.81779 317.44784 438.42372 317.44784" fill="none" stroke-width="41.448" stroke="#83A884" opacity="0.45"><title>Green round 2 → Purple round 3: 15</title></path>
+<path id="flow17" d="M448.42372 199.76564C553.02965 199.76564 553.02965 143.40511 657.63559 143.40511" fill="none" stroke-width="41.448" stroke="#79A5D1" opacity="0.45"><title>Blue round 3 → Red: 15</title></path>
+<path id="flow3" d="M10 336.2316C114.60593 336.2316 114.60593 312.58834 219.21186 312.58834" fill="none" stroke-width="38.6848" stroke="#c34df1" opacity="0.45"><title>Purple 1st pref → Purple round 2: 14</title></path>
+<path id="flow7" d="M10 289.011C114.60593 289.011 114.60593 341.60194 219.21186 341.60194" fill="none" stroke-width="19.3424" stroke="#FACA7E" opacity="0.45"><title>Yellow 1st pref → Purple round 2: 7</title></path>
+<path id="flow4" d="M10 261.379C114.60593 261.379 114.60593 194.65994 219.21186 194.65994" fill="none" stroke-width="8.2896" stroke="#FACA7E" opacity="0.45"><title>Yellow 1st pref → Blue round 2: 3</title></path>
+<path id="flow5" d="M10 269.6686C114.60593 269.6686 114.60593 96.32014 219.21186 96.32014" fill="none" stroke-width="8.2896" stroke="#FACA7E" opacity="0.45"><title>Yellow 1st pref → Red round 2: 3</title></path>
+<path id="flow12" d="M229.21186 265.36774C333.81779 265.36774 333.81779 109.71544 438.42372 109.71544" fill="none" stroke-width="8.2896" stroke="#83A884" opacity="0.45"><title>Green round 2 → Red round 3: 3</title></path>
+<path id="flow6" d="M10 276.5766C114.60593 276.5766 114.60593 263.98614 219.21186 263.98614" fill="none" stroke-width="5.5264" stroke="#FACA7E" opacity="0.45"><title>Yellow 1st pref → Green round 2: 2</title></path>
+<path id="flow13" d="M229.21186 272.27574C333.81779 272.27574 333.81779 217.72644 438.42372 217.72644" fill="none" stroke-width="5.5264" stroke="#83A884" opacity="0.45"><title>Green round 2 → Blue round 3: 2</title></path>
+</g>
+<g id="sankey_nodes">
+<g class="node">
+<rect id="r0" class="for_r0" x="0" y="6.426" height="82.896" width="10" fill="#C44545" fill-opacity="1"><title>Red 1st pref:
+30</title></rect>
+</g>
+<g class="node">
+<rect id="r1" class="for_r1" x="0" y="107.529" height="71.8432" width="10" fill="#3B74B6" fill-opacity="1"><title>Blue 1st pref:
+26</title></rect>
+</g>
+<g class="node">
+<rect id="r2" class="for_r2" x="0" y="197.5792" height="41.448" width="10" fill="#3F8243" fill-opacity="1"><title>Green 1st pref:
+15</title></rect>
+</g>
+<g class="node">
+<rect id="r3" class="for_r3" x="0" y="257.2342" height="41.448" width="10" fill="#FACA7E" fill-opacity="1"><title>Yellow 1st pref:
+15</title></rect>
+</g>
+<g class="node">
+<rect id="r4" class="for_r4" x="0" y="316.8892" height="38.6848" width="10" fill="#c34df1" fill-opacity="1"><title>Purple 1st pref:
+14</title></rect>
+</g>
+<g class="node">
+<rect id="r5" class="for_r5" x="219.21186" y="9.27934" height="91.1856" width="10" fill="#C44545" fill-opacity="1"><title>Red round 2:
+33</title></rect>
+</g>
+<g class="node">
+<rect id="r6" class="for_r6" x="219.21186" y="118.67194" height="82.896" width="10" fill="#3B74B6" fill-opacity="1"><title>Blue round 2:
+30</title></rect>
+</g>
+<g class="node">
+<rect id="r7" class="for_r7" x="219.21186" y="219.77494" height="55.264" width="10" fill="#3F8243" fill-opacity="1"><title>Green round 2:
+20</title></rect>
+</g>
+<g class="node">
+<rect id="r8" class="for_r8" x="219.21186" y="293.24594" height="58.0272" width="10" fill="#c34df1" fill-opacity="1"><title>Purple round 2:
+21</title></rect>
+</g>
+<g class="node">
+<rect id="r9" class="for_r9" x="438.42372" y="14.38504" height="99.4752" width="10" fill="#C44545" fill-opacity="1"><title>Red round 3:
+36</title></rect>
+</g>
+<g class="node">
+<rect id="r10" class="for_r10" x="438.42372" y="132.06724" height="88.4224" width="10" fill="#3B74B6" fill-opacity="1"><title>Blue round 3:
+32</title></rect>
+</g>
+<g class="node">
+<rect id="r11" class="for_r11" x="438.42372" y="238.69664" height="99.4752" width="10" fill="#c34df1" fill-opacity="1"><title>Purple round 3:
+36</title></rect>
+</g>
+<g class="node">
+<rect id="r12" class="for_r12" x="657.63559" y="23.20591" height="140.9232" width="10" fill="#C44545" fill-opacity="1"><title>Red:
+51</title></rect>
+</g>
+<g class="node">
+<rect id="r13" class="for_r13" x="657.63559" y="182.33611" height="143.6864" width="10" fill="#c34df1" fill-opacity="1"><title>Purple 👑:
+52</title></rect>
+</g>
+</g>
+<g id="sankey_labels" font-family="sans-serif" font-size="14px" fill="#000000">
+<rect id="label0_bg" class="for_r0" x="-55.77254" y="22.96042" width="55.08199" height="49.94715" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label0" class="for_r0" text-anchor="end" x="-5.8841" y="47.874" font-weight="700" font-size="12.50053px" dy="-11.51358">Red<tspan x="-5.8841" dy="14.37561" font-weight="700" font-size="12.50053px">1st pref</tspan><tspan x="-5.8841" dy="16.77154" font-weight="400" font-size="15.27842px">30</tspan></text>
+<rect id="label1_bg" class="for_r1" x="-55.27254" y="118.70228" width="54.62089" height="49.61667" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label1" class="for_r1" text-anchor="end" x="-5.8841" y="143.4506" font-weight="700" font-size="12.36789px" dy="-11.34833">Blue<tspan x="-5.8841" dy="14.22308" font-weight="700" font-size="12.36789px">1st pref</tspan><tspan x="-5.8841" dy="16.59359" font-weight="400" font-size="15.11632px">26</tspan></text>
+<rect id="label2_bg" class="for_r2" x="-53.97566" y="194.00927" width="53.44234" height="48.70787" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label2" class="for_r2" text-anchor="end" x="-5.8841" y="218.3032" font-weight="700" font-size="12.00316px" dy="-10.89393">Green<tspan x="-5.8841" dy="13.80363" font-weight="700" font-size="12.00316px">1st pref</tspan><tspan x="-5.8841" dy="16.10424" font-weight="400" font-size="14.67053px">15</tspan></text>
+<rect id="label3_bg" class="for_r3" x="-53.97566" y="253.66427" width="53.44234" height="48.70787" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label3" class="for_r3" text-anchor="end" x="-5.8841" y="277.9582" font-weight="700" font-size="12.00316px" dy="-10.89393">Yellow<tspan x="-5.8841" dy="13.80363" font-weight="700" font-size="12.00316px">1st pref</tspan><tspan x="-5.8841" dy="16.10424" font-weight="400" font-size="14.67053px">15</tspan></text>
+<rect id="label4_bg" class="for_r4" x="-53.86629" y="311.97897" width="53.33987" height="48.62526" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label4" class="for_r4" text-anchor="end" x="-5.8841" y="336.2316" font-weight="700" font-size="11.97px" dy="-10.85263">Purple<tspan x="-5.8841" dy="13.7655" font-weight="700" font-size="11.97px">1st pref</tspan><tspan x="-5.8841" dy="16.05975" font-weight="400" font-size="14.63px">14</tspan></text>
+<rect id="label5_bg" class="for_r5" x="196.75951" y="29.83464" width="55.27828" height="50.195" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label5" class="for_r5" text-anchor="middle" x="224.21186" y="54.87214" font-weight="700" font-size="12.6px" dy="-11.6375">Red<tspan x="224.21186" dy="14.49" font-weight="700" font-size="12.6px">round 2</tspan><tspan x="224.21186" dy="16.905" font-weight="400" font-size="15.4px">33</tspan></text>
+<rect id="label6_bg" class="for_r6" x="196.93138" y="135.20635" width="54.97018" height="49.94716" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label6" class="for_r6" text-anchor="middle" x="224.21186" y="160.11994" font-weight="700" font-size="12.50053px" dy="-11.51358">Blue<tspan x="224.21186" dy="14.37561" font-weight="700" font-size="12.50053px">round 2</tspan><tspan x="224.21186" dy="16.77154" font-weight="400" font-size="15.27842px">30</tspan></text>
+<rect id="label7_bg" class="for_r7" x="197.5642" y="222.90646" width="53.90099" height="49.12095" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label7" class="for_r7" text-anchor="middle" x="224.21186" y="247.40694" font-weight="700" font-size="12.16895px" dy="-11.10048">Green<tspan x="224.21186" dy="13.99429" font-weight="700" font-size="12.16895px">round 2</tspan><tspan x="224.21186" dy="16.32667" font-weight="400" font-size="14.87316px">20</tspan></text>
+<rect id="label8_bg" class="for_r8" x="197.50951" y="297.71777" width="53.99819" height="49.20356" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label8" class="for_r8" text-anchor="middle" x="224.21186" y="322.25954" font-weight="700" font-size="12.20211px" dy="-11.14179">Purple<tspan x="224.21186" dy="14.03242" font-weight="700" font-size="12.20211px">round 2</tspan><tspan x="224.21186" dy="16.37116" font-weight="400" font-size="14.91368px">21</tspan></text>
+<rect id="label9_bg" class="for_r9" x="415.79949" y="38.96121" width="55.62203" height="50.44285" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label9" class="for_r9" text-anchor="middle" x="443.42372" y="64.12264" font-weight="700" font-size="12.69947px" dy="-11.76143">Red<tspan x="443.42372" dy="14.60439" font-weight="700" font-size="12.69947px">round 3</tspan><tspan x="443.42372" dy="17.03846" font-weight="400" font-size="15.52158px">36</tspan></text>
+<rect id="label10_bg" class="for_r10" x="416.0573" y="151.28225" width="55.11602" height="50.11238" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label10" class="for_r10" text-anchor="middle" x="443.42372" y="176.27844" font-weight="700" font-size="12.56684px" dy="-11.59619">Blue<tspan x="443.42372" dy="14.45187" font-weight="700" font-size="12.56684px">round 3</tspan><tspan x="443.42372" dy="16.86051" font-weight="400" font-size="15.35947px">32</tspan></text>
+<rect id="label11_bg" class="for_r11" x="415.79949" y="263.27279" width="55.62203" height="50.44285" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label11" class="for_r11" text-anchor="middle" x="443.42372" y="288.43424" font-weight="700" font-size="12.69947px" dy="-11.76143">Purple<tspan x="443.42372" dy="14.60439" font-weight="700" font-size="12.69947px">round 3</tspan><tspan x="443.42372" dy="17.03846" font-weight="400" font-size="15.52158px">36</tspan></text>
+<rect id="label12_bg" class="for_r12" x="669.16112" y="74.76463" width="34.01266" height="37.50576" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label12" class="for_r12" text-anchor="start" x="673.51969" y="93.66751" font-weight="700" font-size="13.19684px" dy="-4.50288">Red<tspan x="673.51969" dy="17.70576" font-weight="400" font-size="16.12947px">51</tspan></text>
+<rect id="label13_bg" class="for_r13" x="669.16112" y="227.64692" width="50.23141" height="52.76477" rx="3.5" fill="#fff" fill-opacity="0.8" stroke="none" stroke-width="0" stroke-opacity="0"></rect>
+<text id="label13" class="for_r13" text-anchor="start" x="673.51969" y="254.17931" font-weight="700" font-size="13.23px" dy="-12.13238">Purple<tspan x="673.51969" dy="15.2145" font-weight="700" font-size="13.23px">👑</tspan><tspan x="673.51969" dy="17.75025" font-weight="400" font-size="16.17px">52</tspan></text>
+</g>
+</g></svg>

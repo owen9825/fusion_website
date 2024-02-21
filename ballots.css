@@ -84,16 +84,9 @@
     white-space: nowrap; /* Keeps text in a single line */
 }
 
-.link {
-  fill: none;
-  stroke: #000;
-  stroke-opacity: .2;
-}
-.link:hover {
-  stroke-opacity: .5;
-}
-
 .sankey {
-    width: calc(max(60vw, 360px));
-    height: calc(max(20vh, 480px));
+
+    /*width: calc(max(60vw, 360px));
+    height: calc(max(20vh, 480px));*/
+    display: block;
 }
