@@ -78,15 +78,33 @@ nav li:hover {
 }
 
 header {
+    position: relative;
     padding-top: 15px;
+    text-align: center;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 5em;
+    text-shadow: 0 0 7px rgba(176, 175, 175, 0.8);
+}
+
+/* These media sizes are based on https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 6em;
+    }
+}
+
+@media (min-width: 992px) {
+    header h1 {
+        font-size: 7em;
+    }
 }
 
 .logo-wrapper {
-    /* todo: align right*/
-    display: block;
+    display: inline-flex;
     width: 65%;
-    height: 0;
-    padding-bottom: calc(65% * (166 / 736));
     position: relative; /* It will be relative to the container now */
     margin-left: auto;
 }
@@ -100,7 +118,10 @@ header {
     display: grid;
     place-items: center;
     /* Above this width, an ugly, thick black border surrounds the thumbnail */
-    max-width: calc(min(90vw, 639px));
+    max-width: calc(min(85vw, 639px));
+    box-shadow: 0 4px 14px rgba(176, 175, 175, 0.6),
+                0 -4px 14px rgba(0, 0, 0, 0.1),
+                0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .video iframe {
@@ -131,6 +152,16 @@ header {
 
 .card-title {
     margin-bottom: 0;
+}
+
+@font-face {
+    font-family: 'NicoKaku';
+    src: url('fonts/nicokaku_v2.ttf') format('truetype');
+}
+
+.nicokaku {
+    color: white;
+    font-family: 'NicoKaku', sans-serif;
 }
 
 .h-underline {
