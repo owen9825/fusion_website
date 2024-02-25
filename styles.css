@@ -154,11 +154,11 @@ h2 {
     font-weight: bold;
 }
 
-h2.h-underline {
+h1.h-underline, h2.h-underline {
     padding-bottom: 5px;
 }
 
-h2::after, h3:after, h4:after {
+h1::after, h2::after, h3:after, h4:after {
     height: 5px; /* Thickness of the underline */
     border-radius: 4px;
 }
@@ -177,6 +177,12 @@ h5.h-underline {
 
 .bg-plasma {
     background-image: url('images/horizontal_plasma.webp');
+    background-size: cover; /* Cover the entire area of the element */
+    background-position: center; /* Center the background image */
+}
+
+.bg-plasma-top {
+    background-image: url('images/horizontal_plasma_top.webp');
     background-size: cover; /* Cover the entire area of the element */
     background-position: center; /* Center the background image */
 }
