@@ -99,7 +99,8 @@ header {
 .video {
     display: grid;
     place-items: center;
-    max-width: calc(max(90vw, 560px));
+    /* Above this width, an ugly, thick black border surrounds the thumbnail */
+    max-width: calc(min(90vw, 639px));
 }
 
 .video iframe {
