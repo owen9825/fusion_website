@@ -5,6 +5,7 @@
     --fusion-purple: #c34df1;
     --fusion-gray: #949494;
     --underlining-duration: 0.55s;
+    --font-border-width: 4px;
 }
 
 body {
@@ -86,7 +87,10 @@ header {
 header h1 {
     width: 100%;
     font-size: 4em;
-    text-shadow: 0 0 7px rgba(176, 175, 175, 0.8);
+    text-shadow: 2px 0 var(--font-border-width) rgba(176, 175, 175, 0.8),
+                 -2px 0 var(--font-border-width) rgba(176, 175, 175, 0.8),
+                 0 2px var(--font-border-width) rgba(176, 175, 175, 0.8),
+                 0 -2px var(--font-border-width) rgba(176, 175, 175, 0.8);
 }
 
 /* These media sizes are based on https://getbootstrap.com/docs/5.0/layout/breakpoints/ */
