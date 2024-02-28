@@ -321,47 +321,13 @@ button.bg-purple, button.bg-purple:hover {
     border-color: #780a9d;
 }
 
-.bg-cicada {
-    /* https://codepen.io/yoksel/pen/vYZmbr */
-    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(70, 130, 180, 0.1428571429) 40%, rgba(70, 130, 180, 0.1428571429) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(70, 130, 180, 0.1428571429) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(70, 130, 180, 0.1428571429) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(154, 205, 50, 0.1666666667) 40%, rgba(154, 205, 50, 0.1666666667) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(154, 205, 50, 0.1666666667) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(154, 205, 50, 0.1666666667) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 215, 0, 0.2) 40%, rgba(255, 215, 0, 0.2) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(255, 215, 0, 0.2) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 215, 0, 0.2) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 105, 180, 0.25) 40%, rgba(255, 105, 180, 0.25) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(255, 105, 180, 0.25) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 105, 180, 0.25) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(255, 69, 0, 0.3333333333) 40%, rgba(255, 69, 0, 0.3333333333) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(255, 69, 0, 0.3333333333) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(255, 69, 0, 0.3333333333) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, rgba(220, 20, 60, 0.5) 40%, rgba(220, 20, 60, 0.5) 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, rgba(220, 20, 60, 0.5) 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, rgba(220, 20, 60, 0.5) 90%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 40%, violet 40%, violet 60%, rgba(255, 255, 255, 0) 60%), linear-gradient(to right bottom, violet 10%, rgba(255, 255, 255, 0) 10%), linear-gradient(to right bottom, rgba(255, 255, 255, 0) 90%, violet 90%);
-  background-color: orangered;
-  background-size: 23em, 23em, 23em, 23em, 23em, 23em, 17em, 17em, 17em, 17em, 17em, 17em, 13em, 13em, 13em, 13em, 13em, 13em, 11em, 11em, 11em, 11em, 11em, 11em, 7em, 7em, 7em, 7em, 7em, 7em, 5em, 5em, 5em, 5em, 5em, 5em, 3em, 3em, 3em, 3em, 3em, 3em, 1em, 1em, 1em, 1em, 1em, 1em;
-}
-
-.bg-blue-stripes {
-    background-color: #1b8bd2;
-    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-                      linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-                      linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-                      linear-gradient(90deg, transparent 50%, rgba(255,255,255,.29) 50%);
-    background-size: 43px, 59px, 67px, 83px;
-  }
-
-.bg-blue-stripes .bg-viewport {
-  background: radial-gradient(ellipse at center,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 73%,rgba(0,0,0,0.65) 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-}
-
-.bg-blue-purple-gradient {
-  background: linear-gradient(to bottom right, #bffeef, #e9a8fa);
-}
-
-.bg-pink-aether {
-  /* This was from https://fffuel.co/ffflux/ */
-  background-image: url('images/pink-aether.svg');
-  background-size: cover; /* Cover the entire area of the element */
-  background-position: center; /* Center the background image */
-}
-
-.bg-pink-mist {
-  /* This was from https://fffuel.co/ffflux/ */
-  background-image: url('images/pink-mist.svg');
+.bg-gray-mist {
+  /* This is the top-left of bg-ping-mist */
+  background-image: url('images/gray-mist.svg');
   background-size: cover; /* Cover the entire area of the element */
   background-position: center; /* Center the background image */
 }
 
 /* todo: turbulence: https://codepen.io/cobra_winfrey/pen/eYOXOdB */
-
-/* todo: marble background? */
 
 /* todo: charm UI https://codepen.io/TWilson/pen/jOdWqbZ */
