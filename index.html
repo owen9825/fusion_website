@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="glowing-button.css">
     <link rel="stylesheet" href="scrolling.css">
     <link rel="stylesheet" href="ballots.css">
+     <script src="https://www.google.com/recaptcha/api.js?render=6LcnLIMpAAAAAJAdaRaoTD3LhFojEOb_1GYWJXlg"></script>
 </head>
 <body class="bg-transparent bg-viewport text-gray-900 relative">
 
@@ -392,6 +393,34 @@
         </div>
     </div>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 p-3">
+            <div class="p-3">
+                <h2 class="h2-style h-purple h-underline">Give Feedback</h2>
+                <p>Please share your thoughts on the new design 🙂</p>
+                <p>If you'd like to join in, the source code is at <a href="https://github.com/owen9825/fusion_website">https://github.com/owen9825/fusion_website</a></p>
+            </div>
+            <form class="kwes-form bg-aquamarine-transparent rounded p-3"
+              has-recaptcha-v3 recaptcha-site-key="6LcnLIMpAAAAAJAdaRaoTD3LhFojEOb_1GYWJXlg"
+                action="https://kwesforms.com/api/foreign/forms/H6cZMrVb5yjCWEuKzYDh">
+            <div class="mb-3">
+              <label for="kwes_name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="kwes_name" name="name" placeholder="Name">
+            </div>
+            <div class="mb-3">
+              <label for="kwes_email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="kwes_email" name="email_address" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="message" name="message" rows="3"></textarea>
+            </div>
+            <button class="btn btn-info bg-purple" type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
 
 <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -443,5 +472,6 @@
         integrity="sha512-u1L7Dp3BKUP3gijgSRoMTNxmDl/5o+XOHupwwa7jsI1rMzHrllSLKsGOfqjYl8vrEG+8ghnRPNA/SCltmJCZpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script defer src="scripts/tilting.js"></script>
+<script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
 </body>
 </html>
