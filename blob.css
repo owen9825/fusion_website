@@ -7,11 +7,11 @@
   justify-items: center;
   height: max(100%, 200px);
   width: 100%;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 48% 52% 68% 32%/42% 28% 72% 58%;
   animation: blobber 135s 0s ease-in-out infinite, cobler 60s 0s ease-in-out infinite alternate;
 }
-.blob:after {
+.wobble:after {
   content: "";
   display: block;
   position: absolute;
@@ -24,7 +24,7 @@
   background-size: cover;
   background-position: center;
   mix-blend-mode: multiply;
-  animation: blobber 135s 0s ease-in-out infinite,
+  animation: blobber 180s 0s ease-in-out infinite,
     wobbler 10s 0s ease-in-out infinite alternate;
   z-index: 1;
 }

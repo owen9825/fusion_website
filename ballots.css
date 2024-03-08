@@ -47,7 +47,7 @@
 }
 
 .meander {
-    animation: meander 40s infinite alternate;
+    animation: meander 120s infinite alternate;
 }
 
 .ballot h5, .ballot p, .ballot ul, .ballot img {
