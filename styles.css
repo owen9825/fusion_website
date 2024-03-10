@@ -269,6 +269,12 @@ h5.h-underline {
     background-position: center; /* Center the background image */
 }
 
+.bg-underwater {
+    background-image: url('images/underwater_blue.png');
+    background-size: cover;
+    background-position: center;
+}
+
 .bg-aquamarine {
     background-color: rgba(138, 238, 216, 0.73);
 }
@@ -326,6 +332,14 @@ button.bg-purple, button.bg-purple:hover {
   background-image: url('images/gray-mist.svg');
   background-size: cover; /* Cover the entire area of the element */
   background-position: center; /* Center the background image */
+}
+
+@keyframes spin {
+  100% {transform: rotate(1turn); }
+}
+
+.spin {
+    animation: spin 45s linear infinite reverse;
 }
 
 /* todo: turbulence: https://codepen.io/cobra_winfrey/pen/eYOXOdB */
