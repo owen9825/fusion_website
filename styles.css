@@ -270,7 +270,7 @@ h5.h-underline {
 }
 
 .bg-underwater {
-    background-image: url('images/underwater_blue.png');
+    background-image: url('images/underwater_blue.webp');
     background-size: cover;
     background-position: center;
 }
