@@ -53,9 +53,15 @@ h1, h2, h3, h4, h5, p {
 
 
 nav {
-    /*position: fixed; /* Scroll along with the viewport */
     z-index: 4;
     border-radius: 2px;
+}
+nav.navbar {
+    position: fixed;
+    transition: transform 0.8s .1s ease;
+}
+.hide-nav-bar {
+    transform: translateY(-120%);
 }
 
 .bg-glass {
@@ -165,6 +171,9 @@ header h1 {
     header h1 {
         font-size: 7em;
     }
+}
+header.container-fluid {
+    padding-top: 5rem;
 }
 
 .logo-wrapper {
