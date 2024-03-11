@@ -28,9 +28,9 @@
 }
 
 .ballot {
+    padding: 40px;
     z-index: 1;
     position: relative;
-    padding: 40px;
     transform-style: preserve-3d;
     background-image: url('images/card_stock.svg');
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -40,6 +40,60 @@
     color: #333;
     background-size: cover;
     background-position: center;
+}
+.ballot img {
+    padding-top: 0.5rem;
+}
+.ballot .row {
+    margin-bottom: 1rem;
+}
+.ballot p {
+    padding: 0.25rem;
+}
+.ballot .state-province {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 991px) {
+    .ballot {
+        padding: 25px;
+    }
+    .ballot p {
+        padding: 0.1rem;
+    }
+    .ballot .state-province {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+    .ballot {
+        max-width: 370px;
+    }
+    .ballot label {
+        padding-top: calc(0.175rem + 1px);
+        padding-bottom: calc(0.175rem + 1px);
+    }
+    .ballot .row {
+        margin-bottom: 0.5rem;
+    }
+
+    .ballot {
+        font-size: 10px;
+    }
+
+    .ballot h4 {
+        font-size: 18px;
+    }
+
+    .ballot h5 {
+        font-size: 16px;
+    }
+
+    .ballot input {
+        font-size: 10px;
+    }
+    .ballot .vertical-text-container {
+        font-size: 10px;
+    }
 }
 
 .coat-of-arms {
@@ -80,7 +134,7 @@
     right: 0;
     margin-right: 20px; /* Adjust as needed */
     margin-bottom: 20px; /* Adjust space from the bottom */
-    font-size: 14px; /* Adjust size as needed */
+    font-size: 14px;
     white-space: nowrap; /* Keeps text in a single line */
 }
 
