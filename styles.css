@@ -32,6 +32,26 @@ h1, h2, h3, h4, h5, p {
     margin-left: auto;
 }
 
+.container-fluid video {
+    /* The video and images are causing the row to become too tall, making the surrounding text ugly*/
+    max-height: 340px;
+}
+
+.container-fluid img.h-100 {
+    max-height: 240px;
+}
+
+.container-fluid img.w-100 {
+    max-width: 450px;
+}
+
+@media (max-width: 767px) {
+    .rrr_logo {
+        max-width: 200px;
+    }
+}
+
+
 nav {
     /*position: fixed; /* Scroll along with the viewport */
     z-index: 4;
