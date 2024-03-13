@@ -13,6 +13,7 @@ $(function(){
 });
 
 $(document).ready(function () {
+        const nearTop = 300;  // We set our header to have padding-top of 5rem == 80px.
         $('html').on('DOMMouseScroll mousewheel', function (e) {
             if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
                 //scrolling down
@@ -20,6 +21,12 @@ $(document).ready(function () {
             } else {
                 //scrolling up
                 $("#header-nav").removeClass("hide-nav-bar");
+                console.log(`We are at ${window.scrollY}`);
+            }
+            if (window.scrollY < nearTop) {
+                $("#header-nav").removeClass("bg-glass-opaque");
+            } else {
+                $("#header-nav").addClass("bg-glass-opaque");
             }
         });
 
