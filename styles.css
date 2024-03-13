@@ -95,10 +95,8 @@ nav li:hover {
 
 .dropdown {
   position: relative;
-  display: inline-block;
 }
 .dropdown-menu {
-    display: list-item;
     background-color: rgba(211, 248, 244, 0.97);
 }
 .dropdown-menu li {
@@ -108,21 +106,14 @@ nav li:hover {
     background-color: rgba(228, 248, 245, 0.83);
     border-radius: 4px;
 }
+ul.dropdown-menu {
+    margin-top: 0.125rem;
+}
 .dropdown-menu, .dropdown-menu li {
-  display: none;
-  z-index: 5;
+    z-index: 5;
 }
 .dropdown-menu-end {
     right: 5px;
-}
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-.dropdown:hover ul {
-    display: list-item;
-}
-.dropdown:hover li {
-    display: block;
 }
 .dropdown-divider {
     border-color: var(--fusion-purple);
