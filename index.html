@@ -766,44 +766,6 @@
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        console.log("Adding event listeners");
-
-        // Function to change the background
-        function changeBackground() {
-            const selectedValue = this.value; // 'this' refers to the radio button that was clicked
-            console.log("The background shall be changed to " + selectedValue);
-            const backgroundCanvas = document.getElementById('bg-canvas');
-
-            // Remove previous background classes
-            backgroundCanvas.classList.remove('bg-white', 'bg-cicada', 'bg-blue-stripes', 'bg-blue-purple-gradient',
-                'bg-pink-aether', 'bg-pink-mist');
-
-            // Add the selected background class
-            backgroundCanvas.classList.add(selectedValue);
-        }
-
-        // Add click event listener to each radio button
-        const backgroundRadios = document.getElementsByName('backgroundOption');
-        for (var i = 0; i < backgroundRadios.length; i++) {
-            backgroundRadios[i].addEventListener('click', changeBackground);
-        }
-
-        function changePlasmaPerson() {
-            const selectedValue = this.value; // 'this' refers to the radio button that was clicked
-            console.log("The plasma image shall be changed to " + selectedValue);
-            const plasmaImg = document.getElementById('plasma-person');
-            plasmaImg.src = selectedValue;
-        }
-
-        // Add click event listener to each radio button
-        const plasmaRadios = document.getElementsByName('plasmaOption');
-        for (var i = 0; i < plasmaRadios.length; i++) {
-            plasmaRadios[i].addEventListener('click', changePlasmaPerson);
-        }
-    });
-</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"
         integrity="sha512-TPh2Oxlg1zp+kz3nFA0C5vVC6leG/6mm1z9+mA81MI5eaUVqasPLO8Cuk4gMF4gUfP5etR73rgU/8PNMsSesoQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
