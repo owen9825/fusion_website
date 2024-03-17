@@ -144,12 +144,14 @@ ul.dropdown-menu {
 header {
     position: relative;
     padding-top: 15px;
-    text-align: center;
 }
 
 header h1 {
     width: 100%;
     font-size: 4em;
+}
+
+h1.nicokaku {
     text-shadow: 2px 0 var(--font-border-width) rgba(176, 175, 175, 0.8),
                  -2px 0 var(--font-border-width) rgba(176, 175, 175, 0.8),
                  0 2px var(--font-border-width) rgba(176, 175, 175, 0.8),
