@@ -17,6 +17,34 @@ h1, h2, h3, h4, h5, p {
     z-index: 2;
 }
 
+.massive {
+    font-size:2.5rem;
+}
+
+@media (min-width: 768px) {
+    .massive {
+        font-size: 2.75rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .massive {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .massive {
+        font-size: 3.25rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .massive {
+        font-size: 3.5rem;
+    }
+}
+
 .svg-circle {
     width: 100px;
     height: 100px;
@@ -401,6 +429,10 @@ button.bg-aquamarine:hover {
 
 .bg-blue {
     background-color: var(--fusion-blue);
+}
+
+.bg-blue-green {
+    background-color: rgba(57, 164, 161, 0.84);
 }
 
 .bg-purple {
