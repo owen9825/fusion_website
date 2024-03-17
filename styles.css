@@ -243,6 +243,55 @@ header.container-fluid {
     font-family: 'NicoKaku', 'Dosis', sans-serif;
 }
 
+.open-sans {
+    font-family: "Open Sans", sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+h2.inter {
+    font-weight: 500;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+@keyframes bolden {
+    to {
+        font-weight: 700;
+    }
+}
+
+.bolden {
+    font-weight: 600;
+    animation: bolden 0.7s forwards ease;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-900 {
+    /* h2 and smaller */
+    font-weight: 900;
+}
+
+.fw-1000 {
+    /* h1 */
+    font-weight: 1000;
+}
+
 .h-underline {
     position: relative;
     display: inline-block; /* Allows the pseudo-element to align with text */
@@ -270,13 +319,20 @@ h2 {
     font-weight: bold;
 }
 
-h1.h-underline, h2.h-underline {
+h1.h-underline {
+    padding-bottom: 7px;
+}
+
+h2.h-underline {
     padding-bottom: 5px;
 }
 
 h1::after, h2::after, h3:after, h4:after {
     height: 5px; /* Thickness of the underline */
     border-radius: 4px;
+}
+h1::after {
+    height: 7px;
 }
 
 h5.h-underline {
