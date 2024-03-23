@@ -80,21 +80,6 @@ h1, h2, h3, h4, h5, p {
 }
 
 
-nav {
-    z-index: 4;
-    border-radius: 2px;
-}
-nav.navbar {
-    position: fixed;
-    transition: transform 0.8s .1s ease,
-    background-color 3s ease,
-    border-color 3s ease,
-    box-shadow 3s ease;
-}
-.hide-nav-bar {
-    transform: translateY(-120%);
-}
-
 .bg-glass {
     background-color: rgba(190, 190, 190, 0.3); /* Semi-transparent white for glass effect */
     backdrop-filter: blur(5px); /* Blur effect for the background */
@@ -112,6 +97,21 @@ nav.navbar {
     box-shadow: inset 0 4px 4px rgba(176, 175, 175, 0.8), /* Inner top light */
                 inset 0 -4px 4px rgba(0, 0, 0, 0.3), /* Inner bottom shadow */
                 0 8px 16px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
+}
+
+nav {
+    z-index: 4;
+    border-radius: 2px;
+}
+nav.navbar {
+    position: fixed;
+    transition: transform 0.8s .1s ease,
+    background-color 3s ease,
+    border-color 3s ease,
+    box-shadow 3s ease;
+}
+.hide-nav-bar {
+    transform: translateY(-120%);
 }
 
 nav ul {

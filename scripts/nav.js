@@ -3,9 +3,9 @@
 
 $(function(){
     // https://stackoverflow.com/a/19561886/1495729
-    //
+    //  This is needed for mobile.
     $('.dropdown-toggle').hover(function() {
-        $(this).addClass('open');
+        $(this).addClass('open');  // Notice that these are not Popper classes
     },
     function() {
         $(this).removeClass('open');
@@ -66,23 +66,24 @@ $(document).ready(function () {
                 }
             });
             toggle.addEventListener('click', function(event) {
-                if (toggle.classList.contains('clickedOpen')) {
-                    toggle.classList.remove('clickedOpen');
-                } else if (toggle.classList.contains('show')) {
-                    // Popper is processing the click first, so if 'show' is here now, the toggle has just been opened.
-                    toggle.classList.add('clickedOpen');
-                } else if (toggle.classList.contains('open')) {
-                    // The jQuery behaviour above added the 'open' − we can use that as a hint that they've clicked
-                    // this button.
-                    toggle.classList.add('clickedOpen');
-                    revealDropdown();
+                if (toggle.classList.contains('clicked-open')) {
+                    // Popper has processing the click first, so we can't use 'show'
+                    console.log('Closing the dropdown');
+                    toggle.classList.remove('show');
+                    toggle.classList.remove('clicked-open');
+                    toggle.removeAttribute('data-bs-popper');
                 } else {
-                    toggle.classList.remove('clickedOpen');
+                    console.log('Opening the menu');
+                    revealDropdown();
+                    toggle.classList.add('clicked-open');
                 }
             });
             parentLi.addEventListener('mouseleave', function(event) {
                 // https://stackoverflow.com/a/57321303/1495729
-                if (!toggle.classList.contains('clickedOpen')) {
+                // todo: mouse movement margin
+                // Eligible for removal
+                if (!dropdownUnorderedList.classList.contains('open')) {
+                    // What about mobile?
                     dropdownUnorderedList.classList.remove('show');
                     dropdownUnorderedList.removeAttribute('data-bs-popper');
                     toggle.classList.remove('show');
