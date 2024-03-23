@@ -263,7 +263,7 @@ header.container-fluid {
 @font-face {
     font-family: 'NicoKaku';
     /* This only has the glyphs we're actually using. https://stackoverflow.com/a/66238793/1495729 */
-    src: url('fonts/nicokaku_v2_subset.ttf') format('truetype');
+    src: url('/fonts/nicokaku_v2_subset.ttf') format('truetype');
 }
 
 .nicokaku {
@@ -376,19 +376,19 @@ h5.h-underline {
 }
 
 .bg-plasma {
-    background-image: url('images/horizontal_plasma.webp');
+    background-image: url('/images/horizontal_plasma.webp');
     background-size: cover; /* Cover the entire area of the element */
     background-position: center; /* Center the background image */
 }
 
 .bg-plasma-top {
-    background-image: url('images/horizontal_plasma_top.webp');
+    background-image: url('/images/horizontal_plasma_top.webp');
     background-size: cover; /* Cover the entire area of the element */
     background-position: center; /* Center the background image */
 }
 
 .bg-underwater {
-    background-image: url('images/underwater_blue.webp');
+    background-image: url('/images/underwater_blue.webp');
     background-size: cover;
     background-position: center;
 }
@@ -451,7 +451,7 @@ button.bg-purple, button.bg-purple:hover {
 
 .bg-gray-mist {
   /* This is the top-left of bg-pink-mist */
-  background-image: url('images/gray-mist.svg');
+  background-image: url('/images/gray-mist.svg');
   background-size: cover; /* Cover the entire area of the element */
   background-position: center; /* Center the background image */
   background-attachment: fixed;  /* Fixed to the viewport rather than the HTML page, so it doesn't look stretched. */

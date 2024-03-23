@@ -32,7 +32,7 @@
     z-index: 1;
     position: relative;
     transform-style: preserve-3d;
-    background-image: url('images/card_stock.svg');
+    background-image: url('/images/card_stock.svg');
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 5px;
     background-color: #d3c6ae;
