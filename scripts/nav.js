@@ -12,6 +12,18 @@ $(function(){
     });
 });
 
+const isMouseCloseBelowElement = (element, event) => {
+    const rect = element.getBoundingClientRect();
+    const parent = element.parentElement;  // <li class="nav-item dropdown>
+    const parentStyle = window.getComputedStyle(parent, null);
+    const paddingBottom = parseInt(parentStyle.getPropertyValue('padding-bottom'));
+    console.log(`Rect left: ${rect.left}, event location: (${event.clientX}, ${event.clientY})`);
+    return rect.bottom + paddingBottom + 2 > event.clientY  &&
+        event.clientY > rect.top &&
+        rect.left <= event.clientX &&
+        event.clientX <= rect.right;
+}
+
 $(document).ready(function () {
         const nearTop = 300;  // We set our header to have padding-top of 5rem == 80px.
         $('html').on('DOMMouseScroll mousewheel', function (e) {
@@ -92,10 +104,8 @@ $(document).ready(function () {
             });
             parentLi.addEventListener('mouseleave', function(event) {
                 // https://stackoverflow.com/a/57321303/1495729
-                // todo: mouse movement margin
-                // Eligible for removal
-                if (!dropdownUnorderedList.classList.contains('open')) {
-                    // What about mobile?
+                if (!dropdownUnorderedList.classList.contains('open')
+                    && !isMouseCloseBelowElement(toggle, event)) {
                     dropdownUnorderedList.classList.remove('show');
                     dropdownUnorderedList.removeAttribute('data-bs-popper');
                     toggle.classList.remove('show');
