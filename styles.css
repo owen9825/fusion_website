@@ -6,6 +6,8 @@
     --fusion-gray: #949494;
     --underlining-duration: 0.55s;
     --font-border-width: 4px;
+    --z-body: 3;
+    --z-nav: 10;  /*  Always above any body content, but not modals */
 }
 
 body {
@@ -14,7 +16,7 @@ body {
 
 h1, h2, h3, h4, h5, p {
     /* Avoid things accidentally covering up our text */
-    z-index: 2;
+    z-index: var(--z-body) + 2;
 }
 
 .massive {
@@ -60,6 +62,11 @@ h1, h2, h3, h4, h5, p {
     margin-left: auto;
 }
 
+.container, .container-fluid {
+    z-index: var(--z-body);
+    position: relative;
+}
+
 .container-fluid video {
     /* The video and images are causing the row to become too tall, making the surrounding text ugly*/
     max-height: 340px;
@@ -100,7 +107,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 nav {
-    z-index: 4;
+    z-index: var(--z-nav);
     border-radius: 2px;
 }
 nav.navbar {
@@ -149,7 +156,7 @@ ul.dropdown-menu {
     margin-top: 0.125rem;
 }
 .dropdown-menu, .dropdown-menu li {
-    z-index: 5;
+    z-index: var(--z-body) + 5;
 }
 .dropdown-menu-end {
     right: 5px;
@@ -455,6 +462,67 @@ button.bg-purple, button.bg-purple:hover {
   background-size: cover; /* Cover the entire area of the element */
   background-position: center; /* Center the background image */
   background-attachment: fixed;  /* Fixed to the viewport rather than the HTML page, so it doesn't look stretched. */
+}
+
+@keyframes jumbo {
+    from {
+        background-position: 50% 50%, 50% 50%;
+    }
+    to {
+        background-position: 350% 50%, 350% 50%;
+    }
+}
+
+.bg-charm {
+    --stripes: repeating-linear-gradient(
+        100deg,
+        #fff 0%,
+        #fff 7%,
+        transparent 10%,
+        transparent 12%,
+        #fff 16%
+    );
+    --stripesDark: repeating-linear-gradient(
+        100deg,
+        #000 0%,
+        #000 7%,
+        transparent 10%,
+        transparent 12%,
+        #000 16%
+    );
+    --rainbow: repeating-linear-gradient(
+        100deg,
+		#c8dcf6 10%,
+		#efd1ff 15%,
+		#a9c6ec 20%,
+		#85e3ee 25%,
+		#bfddff 30%
+    );
+    background-image: var(--stripes), var(--rainbow);
+    background-size: 300%, 200%;
+    background-position: 50% 50%, 50% 50%;
+
+    filter: blur(10px) invert(100%);
+
+    mask-image: radial-gradient(ellipse at 100% 0%, black 40%, transparent 70%);
+
+    position: absolute;
+    display: block;
+    pointer-events: none;
+	width: 100%;
+	height: 30vh;
+	z-index: var(--z-body) -1;
+}
+
+.bg-charm::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: var(--stripes), var(--rainbow);
+    background-size: 200%, 100%;
+    animation: jumbo 100s linear infinite;
+    background-attachment: fixed;
+    mix-blend-mode: difference;
 }
 
 @keyframes spin {
