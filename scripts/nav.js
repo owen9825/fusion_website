@@ -29,6 +29,18 @@ $(document).ready(function () {
                 $("#header-nav").addClass("bg-glass-opaque");
             }
         });
+        $('.navbar-toggler').on('click', function (event) {
+            console.log('You clicked the navbar-toggler');
+            if ($(this).hasClass('clicked-open')) {
+                $(this).removeClass('clicked-open');
+                if (window.scrollY < nearTop) {
+                    $("#header-nav").removeClass('bg-glass-opaque');
+                }
+            } else {
+                $(this).addClass('clicked-open');
+                $("#header-nav").addClass('bg-glass-opaque');
+            }
+        });
 
         // Here we're adding the same classes as Popper, so that mouse-over behaves the same as
         // what Popper would do, for a click.
