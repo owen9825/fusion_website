@@ -212,7 +212,15 @@ h1.nicokaku {
     }
 }
 header.container-fluid {
+    /* Space under the horizontal, site nav */
     padding-top: 5rem;
+}
+
+.sidebar {
+    position: sticky;
+    top: 8rem;  /* Same as header */
+    height: calc(100vh - 8rem);
+    overflow-y: auto;
 }
 
 .logo-wrapper {
@@ -249,11 +257,6 @@ header.container-fluid {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; /* Adjust gap as needed */
 }
-
-/* Fixed height for each card */
-/*.card-body {
-    height: 200px;
-}*/
 
 .card-body img {
     width: 100%;
