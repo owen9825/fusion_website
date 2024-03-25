@@ -298,11 +298,11 @@ h2.inter {
 }
 
 .fw-500 {
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .fw-600 {
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 @keyframes bolden {
@@ -317,7 +317,7 @@ h2.inter {
 }
 
 .fw-700 {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 .fw-900 {
@@ -327,7 +327,7 @@ h2.inter {
 
 .fw-1000 {
     /* h1 */
-    font-weight: 1000;
+    font-weight: 1000 !important;
 }
 
 .h-underline {
