@@ -1,8 +1,5 @@
-const canvas = document.getElementById("climate_canvas");
+const canvas = document.getElementById("climate-canvas");
 const ctx = canvas.getContext("2d");
-//const glow_background = document.getElementById("canvas_glow");
-/*w = ctx.canvas.width = window.innerWidth;
-h = ctx.canvas.height = window.innerHeight;*/
 const period = 70_000;
 const population = 120;
 let canvasWidth;
@@ -20,19 +17,21 @@ let amplitude;
 
 function resetDimensions() {
   console.log('Resetting dimensions');
-  w = ctx.canvas.width = window.innerWidth;
-  h = ctx.canvas.height = window.innerHeight;
   // Use CSS to guide our sizing of the canvas. Here we assert that the canvas is drawn as a hero.
   const root = document.documentElement;
+  // Here we assume that the hero height is expressed in vw units.
   const heroWidthString = getComputedStyle(root).getPropertyValue('--hero-width');
   canvasWidth = parseFloat(heroWidthString) / 100 * window.innerWidth; // Convert to pixels
+  // Here we assume that the hero height is expressed in vh units.
   const heroHeightString = getComputedStyle(root).getPropertyValue('--hero-height');
   canvasHeight = parseFloat(heroHeightString) / 100 * window.innerHeight; // Convert to pixels
+  ctx.canvas.width = canvasWidth;
+  ctx.canvas.height = canvasHeight;
   maxHeight = canvasHeight * 0.9;
   minHeight = canvasHeight * 0.5;
   dots = [{}];
   ctx.globalCompositeOperation = "lighter";
-  amplitude = w * 0.05;  // Oscillation amplitude (along x axis)
+  amplitude = canvasWidth * 0.05;  // Oscillation amplitude (along x axis)
 }
 
 window.onresize = function() {
@@ -43,7 +42,6 @@ window.onresize = function() {
 function getHSVFromX(x, width) {
   // Notice this assumes that the canvas starts at x=0
   const xNormalized = x / width; // Normalize x-coordinate to [0, 1] range
-
   // Define color points in HSV space
   const colorPoints = [
     { x: 1, h: 0, s: 87, v: 30 }, // crimson (100% to the right)
@@ -51,7 +49,7 @@ function getHSVFromX(x, width) {
     { x: 0.68, h: 220, s: 42.3, v: 88.4 }, // pastel blue
     { x: 0.62, h: 316.4, s: 17.4, v: 87.9 }, // pastel pink
     { x: 0.6, h: 16.5, s: 4.7, v: 81.8 }, // white (60% to the right)
-    {x: 0.5, h: 220, s: 65.4, v: 80.8},
+    { x: 0.5, h: 220, s: 65.4, v: 80.8},
     { x: 0.3, h: 220, s: 71.1, v: 57.6 }, // blue (30% to the right)
     { x: 0, h: 220, s: 83.2, v: 37.4 } // navy blue (0% to the right)
   ];
@@ -67,40 +65,44 @@ function getHSVFromX(x, width) {
       closestRight = point;
     }
   }
+  console.log(`Normalised x: ${xNormalized} (${x} / ${width}, closest: ${closestLeft.x}, ${closestRight.x}`);
 
   // Interpolate between the two closest color points
-  const t = (xNormalized - closestLeft.x) / (closestRight.x - closestLeft.x);
-  const h = closestLeft.h + t * (closestRight.h - closestLeft.h);
-  const s = closestLeft.s + t * (closestRight.s - closestLeft.s);
-  const v = closestLeft.v + t * (closestRight.v - closestLeft.v);
+  const proportion = (xNormalized - closestLeft.x) / (closestRight.x - closestLeft.x);
+  const h = closestLeft.h + proportion * (closestRight.h - closestLeft.h);
+  const s = closestLeft.s + proportion * (closestRight.s - closestLeft.s);
+  const v = closestLeft.v + proportion * (closestRight.v - closestLeft.v);
 
   return { h, s, v };
 }
 
 function getDot() {
-  let centerX = Math.random() * w;
+  let centerX = Math.random() * canvasWidth;
+  //let centerY = Math.random() * canvasHeight;
   const { h, s, v } = getHSVFromX(centerX, canvasWidth);
   return {
     x: centerX,
-    y: Math.random() * h / 2,
-    h: Math.random() * (maxHeight - minHeight) + minHeight,
-    w: Math.random() * (maxWidth - minWidth) + minWidth,
-    c: { h, s, v },
-    m: Math.random() * (maxSpeed - minSpeed) + minSpeed,
+    y: Math.random() * canvasHeight / 2,
+    h: Math.random() * (maxHeight - minHeight) + minHeight,  // height
+    w: Math.random() * (maxWidth - minWidth) + minWidth,  // width
+    c: { h, s, v },  // color
+    m: Math.random() * (maxSpeed - minSpeed) + minSpeed,  // speed
     x0: centerX,
-    y0: Math.random() * h / 2,
+    y0: Math.random() * canvasHeight / 2,
     t0: new Date().getTime() - Math.random() * period
   };
 }
 
 function pushDots(dots, population) {
   for (i = 1; i < population; i++) {
-    dots.push(getDot());
+    const dot = getDot();
+    console.log(JSON.stringify(dot));
+    dots.push(dot);
   }
 }
 
 function render() {
-  ctx.clearRect(0, 0, w, h);
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
   for (i = 1; i < dots.length; i++) {
     ctx.beginPath();
     const { h, s, v } = dots[i].c;
@@ -118,12 +120,12 @@ function render() {
 
     let executionTime = new Date().getTime();
     dots[i].x = dots[i].x0 + amplitude * Math.sin(2 * Math.PI * (executionTime - dots[i].t0) / period);
-    if (dots[i].x > w || dots[i].x < 0) {
+    if (dots[i].x > canvasWidth || dots[i].x < 0) {
       dots[i].t0 = executionTime;
       dots[i].x0 = dots[i].x;
     }
 
-    if (dots[i].x > w + maxWidth) {
+    if (dots[i].x > canvasWidth + maxWidth) {
       dots.splice(i, 1);
       dots.push(getDot());
     }

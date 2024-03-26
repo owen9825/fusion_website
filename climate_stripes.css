@@ -7,26 +7,31 @@
 
 #climate-canvas{
   /*cursor: crosshair;*/
-  z-index: 2;
-  /*position: absolute;
-  top: 0; left: 0;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--hero-width);
+  height: var(--hero-height);
+  z-index: calc(var(--z-body));
 }
 
 #canvas-overlay{
   background: radial-gradient(ellipse at center, rgba(0,0,0,.0) 10%, rgba(0,0,0,.8) 80%, rgba(0,0,0,1) 90%, rgba(0,0,0,1) 100%);
-  z-index: 3;
+  z-index: calc(var(--z-body) + 1);
   position: absolute;
-  top:0;left:0;
+  top: 0;
+  left:0;
   height: var(--hero-height);
-  width: 100%;
+  width: var(--hero-width);
 }
 
-#canvas_glow{
-  z-index: 1;
+#canvas-glow{
+  z-index: calc(var(--z-body) - 2);
   position: absolute;
-  top:0;left:0;
+  top: 0;
+  left:0;
   height: var(--hero-height);
-  width: 100%;
+  width: var(--hero-width);
   background: radial-gradient(ellipse at center, hsla(200, 50%, 50%, 0.8) 0%, rgba(0, 0, 0, 0) 100%)
 }
 

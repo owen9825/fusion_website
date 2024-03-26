@@ -6,10 +6,11 @@
     --fusion-gray: #949494;
     --underlining-duration: 0.55s;
     --font-border-width: 4px;
-    --z-body: 3;
+    --z-body: 4;
     --z-nav: 10;  /*  Always above any body content, but not modals */
     --hero-width: 100vw;
     --hero-height: 30vh;
+    --post-nav-padding: 5rem;  /* Elements wishing to be below the nav should use this */
 }
 
 body {
@@ -215,7 +216,7 @@ h1.nicokaku {
 }
 header.container-fluid {
     /* Space under the horizontal, site nav */
-    padding-top: 5rem;
+    padding-top: var(--post-nav-padding);
 }
 
 .sidebar {
