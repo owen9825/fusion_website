@@ -36,6 +36,7 @@ $(document).ready(function () {
                 console.log(`We are at ${window.scrollY}`);
             }
             if (window.scrollY < nearTop) {
+                // todo: check if there's a hero image. If so, keep the glass opaque.
                 $("#header-nav").removeClass("bg-glass-opaque");
             } else {
                 $("#header-nav").addClass("bg-glass-opaque");

@@ -8,6 +8,8 @@
     --font-border-width: 4px;
     --z-body: 3;
     --z-nav: 10;  /*  Always above any body content, but not modals */
+    --hero-width: 100vw;
+    --hero-height: 30vh;
 }
 
 body {

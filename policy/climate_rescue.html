@@ -12,8 +12,8 @@
           referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/blob.css">
-    <link rel="stylesheet" href="/glowing-button.css">
     <link rel="stylesheet" href="/scrolling.css">
+    <link rel="stylesheet" href="/climate_stripes.css">
     <script src="https://www.google.com/recaptcha/api.js?render=6LcnLIMpAAAAAJAdaRaoTD3LhFojEOb_1GYWJXlg"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <!-- https://afeld.github.io/bootstrap-toc/ -->
@@ -27,7 +27,6 @@
 <body class="bg-transparent bg-viewport text-gray-900 relative"
       data-bs-spy="scroll" data-bs-target="#toc">
 <nav id="header-nav" class="w-100 navbar navbar-expand-lg navbar-light bg-glass">
-    <!-- use sticky-top to keep it at the top -->
     <div class="container-fluid">
         <a class="navbar-brand" href="/"><img class="logo navbar-brand active" src="/images/solo-colour.svg"
                                               alt="Fusion logo"></a>
@@ -107,37 +106,26 @@
         </div>
     </div>
 </nav>
-<div class="bg-charm"></div>
+<!--div class="bg-charm"></div-->
 <div class="w-100">
+    <div class="row">
+        <header class="container-fluid">
+                    <!-- Title -->
+                    <h1 class="align-items-left h-underline inter fw-600 bg-glass">
+                        Climate Rescue
+                    </h1>
+                    <div id="canvas_glow"></div>
+                    <div id="canvas_overlay"></div>
+                    <canvas id="climate_canvas"></canvas>
+                </header>
+    </div>
     <div class="row">
         <div class="d-none d-sm-block col-12 col-sm-2 col-xl-1 sidebar">
             <nav id="toc" data-toggle="toc"></nav>
         </div>
         <div class="col-sm-10">
             <div class="container">
-                <!-- Top navigation -->
-                <header class="container-fluid">
-                    <!-- Title -->
-                    <h1 class="align-items-left h-underline h-purple inter fw-600">
-                        Climate Rescue
-                    </h1>
-                    <p class="my-2 mx-1">
-                        Fusion's mission is to collaborate widely throughout society, to deeply explore underlying
-                        issues, and to
-                        build consensus for long-term solutions.
-                    </p>
-                </header>
-            </div>
-            <div class="container">
-                <div class="my-3 mx-1 py-2 row">
-                    <div class="col-7">
-                        If you'd like to play a part in crafting policy for Fusion, the place to be is the policy
-                        development committee.
-                    </div>
-                    <div class="col-5">Calendar</div>
-                </div>
                 <div class="my-2 mx-1 p-2">
-                    <h2 class="h-pink h-underline transition-delay" id="climate-rescue">Climate Rescue</h2>
                     <div>
                         <p>
                             The world has passed any point that could be regarded as a safe climate. Current impacts are
@@ -190,11 +178,11 @@
                         <p>We must build the workforce for growing and emerging sectors, including in STEM,
                             manufacturing and land-based industries.
                         </p>
-                        <h3 class="h-underline h-pink fw-600" id="10-years">10-year transition to <em>negative</em>
+                        <h3 class="h-underline h-pink fw-600" id="ten-years">10-year transition to <em>negative</em>
                             emissions (reduce and remove)</h3>
                         <p>
                             We need emergency roadmaps and transitions to zero or near zero across every sector.&nbsp;Much
-                            of the transition is about fixing inneficiencies in homes and industry which accounts for a
+                            of the transition is about fixing inefficiencies in homes and industry which accounts for a
                             significant portion of current emissions.
                         </p>
                         <p>
@@ -332,8 +320,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script defer src="/scripts/nav.js"></script>
 <script defer src="/scripts/underlining.js"></script>
-<script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
+<script defer src="https://kwesforms.com/v2/kwes-script.js" defer></script>
 <!-- https://afeld.github.io/bootstrap-toc/ -->
 <script defer src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
+<script defer src="/scripts/climate_stripes.js"></script>
 </body>
 </html>
