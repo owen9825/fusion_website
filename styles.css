@@ -10,7 +10,7 @@
     --z-nav: 10;  /*  Always above any body content, but not modals */
     --hero-width: 100vw;
     --hero-height: 30vh;
-    --post-nav-padding: 5rem;  /* Elements wishing to be below the nav should use this */
+    --post-nav-padding: 5rem;  /* Elements wishing to be noticeably below the nav should use this */
 }
 
 body {
@@ -19,7 +19,7 @@ body {
 
 h1, h2, h3, h4, h5, p {
     /* Avoid things accidentally covering up our text */
-    z-index: var(--z-body) + 2;
+    z-index: calc(var(--z-body) + 2);
 }
 
 .massive {
@@ -159,7 +159,7 @@ ul.dropdown-menu {
     margin-top: 0.125rem;
 }
 .dropdown-menu, .dropdown-menu li {
-    z-index: var(--z-body) + 5;
+    z-index: calc(var(--z-body) + 5);
 }
 .dropdown-menu-end {
     right: 5px;
@@ -251,7 +251,7 @@ header.container-fluid {
 .video iframe {
     aspect-ratio: calc(560 / 315);
     width: 100%;
-    z-index: 3;
+    z-index: var(--z-body);
 }
 
 /* Ensure the value cards are within a container that controls their width */
@@ -517,7 +517,7 @@ button.bg-purple, button.bg-purple:hover {
     pointer-events: none;
 	width: 100%;
 	height: 30vh;
-	z-index: var(--z-body) -1;
+	z-index: calc(var(--z-body) - 1);
 }
 
 .bg-charm::after {
