@@ -7,3 +7,6 @@ s3_website.yml
 
 # These are too big for GitHub
 video/
+
+# Don't leak these
+credentials.env
