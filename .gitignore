@@ -5,6 +5,13 @@ Design.xcf
 
 s3_website.yml
 
+# Specific image renditions − straight to Cloudflare
+*_240.webp
+*_358.webp
+*_450.webp
+*_722.webp
+*_726.webp
+
 # These are too big for GitHub
 video/
 
