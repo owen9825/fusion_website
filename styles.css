@@ -181,9 +181,36 @@ header {
     padding-top: 15px;
 }
 
+.header-container {
+    position: relative;
+}
+
+.header-container img {
+    min-height: 200px;
+    /* Our header images are chosen to be 4:1, and we wish for it to be 2.25 × the line height used later. */
+    height: calc(1.125 * 0.25 * 100vw);
+    max-height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
 header h1 {
     width: 100%;
     font-size: 4em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+header .fs-scale {
+    /* Our header images are 4:1 and we wish for the letter to be 50% of the image height. */
+    font-size: min(4em, calc(0.5 * 0.25 * 100vw));
 }
 
 h1.nicokaku {
@@ -415,6 +442,11 @@ button.bg-aquamarine:hover {
     background-color: rgba(138, 238, 216, 0.24);
     margin: 0;
     padding: 0;
+}
+
+.bg-gray-transparent {
+    background-color: rgba(167,173,172,0.73);
+    color: white;
 }
 
 .bg-opal {
