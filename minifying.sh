@@ -13,9 +13,12 @@ do
     hash=$(md5sum "$file" | cut -d' ' -f1 | cut -c1-8)
 
     # Minify the CSS file and save it with the hash and .min.css extension
-    cssmin "$file" > "styles/minified/${filename}.${hash}.min.css"
-    echo "Minified $file -> styles/minified/${filename}.${hash}.min.css"
+    outputFilename="styles/minified/${filename}.${hash}.min.css"
+    cssmin "$file" > "${outputFilename}"
+    echo "Minified $file -> ${outputFilename}"
     sed -i "s|styles/minified/${filename}\.[a-z0-9]\+\.min\.css|styles/minified/${filename}.${hash}.min.css|g" index.html policy/*.html
+    aws s3api put-object --bucket fusion-assets --endpoint-url "${FUSION_ASSETS_ENDPOINT}" --body "${outputFilename}" --key "${outputFilename}"
+
 done
 
 echo "CSS minification completed."
