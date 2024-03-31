@@ -9,6 +9,7 @@
     --z-body: 3;
     --z-nav: 10;  /*  Always above any body content, but not modals */
     --container-max-width: 800px;
+    --near-top: 300px;  /* When should the nav bar always be visible? 5rem. */
 }
 
 body {
@@ -246,9 +247,9 @@ header.container-fluid {
 
 .sidebar {
     position: sticky;
-    top: 8rem;  /* Same as header */
-    height: calc(100vh - 8rem);
-    overflow-y: auto;
+    top: 4.5rem;  /* Enough room for nav */
+    height: calc(100vh - 4.5rem);
+    overflow-y: hidden;
 }
 
 .logo-wrapper {
