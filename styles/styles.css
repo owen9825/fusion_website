@@ -302,7 +302,8 @@ header.container-fluid {
 @font-face {
     font-family: 'NicoKaku';
     /* This only has the glyphs we're actually using. https://stackoverflow.com/a/66238793/1495729 */
-    src: url('/fonts/nicokaku_v2_subset.ttf') format('truetype');
+    /* Notice that we need to provide the full URL, not a local one, so as to avoid CORS errors */
+    src: url('https://fusionparty.space/fonts/nicokaku_v2_subset.ttf') format('truetype');
 }
 
 .nicokaku {

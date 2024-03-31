@@ -15,6 +15,7 @@ do
     # Minify the CSS file and save it with the hash and .min.css extension
     cssmin "$file" > "styles/minified/${filename}.${hash}.min.css"
     echo "Minified $file -> styles/minified/${filename}.${hash}.min.css"
+    sed -i "s|styles/minified/${filename}\.[a-z0-9]\+\.min\.css|styles/minified/${filename}.${hash}.min.css|g" index.html policy/*.html
 done
 
 echo "CSS minification completed."
