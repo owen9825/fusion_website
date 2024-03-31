@@ -1,0 +1,32 @@
+:root {
+  --climate-height: 200px;
+  --climate-width: 800px
+}
+
+.canvas-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: var(--climate-height);
+}
+
+#canvas-glow,
+#climate-canvas,
+#canvas-overlay {
+  /* Put all our overlapping elements in the same grid cell, so they share the exact same position */
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: var(--container-max-width);
+  height: var(--climate-height);
+}
+
+#canvas-glow{
+  z-index: calc(var(--z-body) - 2);
+  background: radial-gradient(ellipse at center, hsla(200, 50%, 50%, 0.8) 0%, rgba(0, 0, 0, 0) 100%)
+}
+
+#climate-canvas{
+  z-index: calc(var(--z-body) - 1);
+}

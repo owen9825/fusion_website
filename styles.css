@@ -8,6 +8,7 @@
     --font-border-width: 4px;
     --z-body: 3;
     --z-nav: 10;  /*  Always above any body content, but not modals */
+    --container-max-width: 800px;
 }
 
 body {
@@ -57,7 +58,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .container {
-    max-width: 800px;
+    max-width: var(--container-max-width);
     margin-right: auto;
     margin-left: auto;
 }
