@@ -495,7 +495,7 @@ button.bg-purple, button.bg-purple:hover {
 
 .bg-gray-mist {
   /* This is the top-left of bg-pink-mist */
-  background-image: url('https://fusionparty.space/images/gray_mist.svg');
+  background-image: url('https://fusionparty.space/images/gray_mist.webp');
   background-size: cover; /* Cover the entire area of the element */
   background-position: center; /* Center the background image */
   background-attachment: fixed;  /* Fixed to the viewport rather than the HTML page, so it doesn't look stretched. */
