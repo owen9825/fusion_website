@@ -40,6 +40,9 @@ to a domain name. Owen has purchased the name [fusionparty.space](https://fusion
 A [rule has been added](https://dash.cloudflare.com/ea5bd9ef975707ea2e4d11229641a447/fusionparty.space/rules/transform-rules/modify-response-header) 
 to allow the Cloudflare assets to be served from any origin (eg localhost).
 
+A [further rule has been added](https://dash.cloudflare.com/ea5bd9ef975707ea2e4d11229641a447/fusionparty.space/rules/transform-rules/modify-response-header)
+so that all SVG images are served with the `Content-Type: image/svg+xml` header.
+
 ## Deploying web pages
 ```shell
 export AWS_PROFILE=owen

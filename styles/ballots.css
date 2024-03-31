@@ -139,8 +139,5 @@
 }
 
 .sankey {
-
-    /*width: calc(max(60vw, 360px));
-    height: calc(max(20vh, 480px));*/
     display: block;
 }
