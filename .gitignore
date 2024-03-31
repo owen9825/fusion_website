@@ -17,3 +17,7 @@ video/
 
 # Don't leak these
 credentials.env
+
+# Build artifacts
+styles/minified/
+ 
