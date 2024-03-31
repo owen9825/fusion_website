@@ -66,7 +66,6 @@ function getHSVFromX(x, width) {
       closestRight = point;
     }
   }
-  //console.log(`Normalised x: ${xNormalized} (${x} / ${width}, closest: ${closestLeft.x}, ${closestRight.x}`);
 
   // Interpolate between the two closest color points
   const proportion = (xNormalized - closestLeft.x) / (closestRight.x - closestLeft.x);
