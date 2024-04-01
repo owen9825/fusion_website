@@ -489,6 +489,18 @@ button.bg-aquamarine:hover {
     color:white;
 }
 
+.bg-pink {
+    background-color: #ff7fff;
+    color: white;
+    border-color: #d249d2;
+}
+
+.bg-pink:hover {
+    background-color: #dc63dc;
+    color: white;
+    border-color: #d249d2;
+}
+
 button.bg-purple, button.bg-purple:hover {
     border-color: #780a9d;
 }
