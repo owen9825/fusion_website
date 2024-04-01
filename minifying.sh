@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Before running this, ensure you've installed css min (npm install -g --registry https://registry.npmjs.org/ cssmin)"
+echo "Before running this, ensure you've installed css min (npm install -g --registry https://registry.npmjs.org/ clean-css-cli)"
 echo "Clearing previous contents";
 rm styles/minified/*.min.css
 
@@ -14,7 +14,7 @@ do
 
     # Minify the CSS file and save it with the hash and .min.css extension
     outputFilename="styles/minified/${filename}.${hash}.min.css"
-    cssmin "$file" > "${outputFilename}"
+    cleancss --output "${outputFilename}" "${file}"
     echo "Minified $file -> ${outputFilename}"
     sed -i "s|styles/minified/${filename}\.[a-z0-9]\+\.min\.css|styles/minified/${filename}.${hash}.min.css|g" index.html policy/*.html
     aws s3api put-object --bucket fusion-assets --endpoint-url "${FUSION_ASSETS_ENDPOINT}" --body "${outputFilename}" --key "${outputFilename}"
