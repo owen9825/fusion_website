@@ -13,6 +13,8 @@ s3_website.yml
 *_722.webp
 *_726.webp
 *_800.webp
+# Please deploy straight to Cloudflare − no point keepin them in GitHub too
+images/
 
 # These are too big for GitHub
 video/
