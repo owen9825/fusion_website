@@ -30,8 +30,8 @@ aws_secret_access_key = …
 So now, activate your credentials file and run some commands (these examples are specific to the bucket being used in this project):
 ```shell
 source env.credentials
-aws s3api list-objects --bucket fusion-assets --endpoint-url https://ea5bd9ef975707ea2e4d11229641a447.r2.cloudflarestorage.com
-aws s3api put-object --bucket fusion-assets --endpoint-url https://ea5bd9ef975707ea2e4d11229641a447.r2.cloudflarestorage.com --body images/woman_at_eucalyptus_valley_358.webp --key images/woman_at_eucalyptus_valley_358.webp 
+aws s3api list-objects --bucket fusion-assets --endpoint-url $FUSION_ASSETS_ENDPOINT
+aws s3api put-object --bucket fusion-assets --endpoint-url $FUSION_ASSETS_ENDPOINT --body images/woman_at_eucalyptus_valley_358.webp --key images/woman_at_eucalyptus_valley_358.webp 
 ```
 
 Notice that although R2 assets can be accessed publicly, Cloudflare won't serve them through a CDN unless we attach them
