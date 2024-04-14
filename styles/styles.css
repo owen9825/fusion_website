@@ -108,6 +108,24 @@ h1, h2, h3, h4, h5, p {
                 0 8px 16px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
 }
 
+figcaption {
+    display: inline-block;
+}
+
+.tab-caption {
+    padding: 0.5rem 1rem;
+    background-color: #f1f9fc91; /* Light gray background color */
+    border-radius: 0 0 10px 10px; /* Rounded bottom corners */
+    margin-left: 5px;
+    margin-top: 0px; /* Pulls the caption up to cover the gap */
+    position: relative; /* Allows the caption to overlap the image */
+    box-shadow: 0 8px 16px rgba(140, 165, 168, 0.1); /* Drop shadow for depth */;
+}
+
+.tab-caption a {
+    color: var(--bs-secondary-color);
+}
+
 nav {
     z-index: var(--z-nav);
     border-radius: 2px;
