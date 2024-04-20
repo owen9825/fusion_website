@@ -82,6 +82,15 @@ h1, h2, h3, h4, h5, p {
     max-width: 450px;
 }
 
+.w-1600 {
+    max-width: 1600px;
+}
+
+.w-inf {
+    max-width: inherit;
+}
+
+
 @media (max-width: 767px) {
     .rrr_logo {
         max-width: 200px;
@@ -124,6 +133,11 @@ figcaption {
 
 .tab-caption a {
     color: var(--bs-secondary-color);
+}
+
+.no-decorate {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 nav {
@@ -465,6 +479,10 @@ button.bg-aquamarine:hover {
     background-color: rgba(138, 238, 216, 0.24);
     margin: 0;
     padding: 0;
+}
+
+.bg-blue-gray-transparent {
+    background-color: #e9fbfab0;
 }
 
 .bg-gray-transparent {
