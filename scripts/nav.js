@@ -48,6 +48,13 @@ $(document).ready(
             $("#header-nav").removeClass("hide-nav-bar");
         }
 
+        $(document).on('keydown', function (e) {
+            if (e.key === 'Home') {
+                showNav();
+                updateNavColor(0);
+            }
+        });
+
         $('html').on('DOMMouseScroll mousewheel', function (e) {
             if (e.originalEvent.detail > 0 || e.originalEvent.wheelDelta < 0) {
                 //scrolling down
