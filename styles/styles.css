@@ -117,6 +117,14 @@ h1, h2, h3, h4, h5, p {
                 0 8px 16px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
 }
 
+.bg-pink-glass {
+  background: linear-gradient(135deg, rgba(193, 169, 197, 0.53), rgba(221, 157, 232, 0.53));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 35px 0 rgba(31, 38, 135, 0.27);
+}
+
 figcaption {
     display: inline-block;
 }
@@ -138,6 +146,10 @@ figcaption {
 .no-decorate {
     color: inherit;
     text-decoration: inherit;
+}
+
+.no-decorate:hover {
+    text-decoration: underline;
 }
 
 nav {
@@ -182,6 +194,7 @@ nav li:hover {
 .dropdown-menu li {
     border-radius: 4px;
 }
+
 .dropdown-item:hover {
     background-color: rgba(228, 248, 245, 0.83);
     border-radius: 4px;
@@ -208,6 +221,65 @@ ul.dropdown-menu {
 .logo {
     height: 33px;
     width: auto;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    font-size: 24px;
+    color: gray;
+}
+
+.icons svg {
+    width: 30px;
+    height: 30px;
+}
+
+.icons svg:hover {
+    cursor: pointer;
+    animation: neon-pink-glow 15s ease-in-out infinite alternate;
+}
+
+.icons li {
+    display: inline-block;
+}
+
+.neon-pink:hover {
+    animation: neon-pink-glow 15s ease-in-out infinite alternate;
+}
+
+@keyframes neon-pink-glow {
+  from {
+    filter: drop-shadow(0 0 10px #fff)
+            drop-shadow(0 0 20px #fff)
+            drop-shadow(0 0 30px #fff)
+            drop-shadow(0 0 40px #F897E9EA)
+            /*drop-shadow(0 0 70px #F897E9EA)
+            drop-shadow(0 0 80px #F897E9EA)
+            drop-shadow(0 0 100px #F897E9EA)
+            drop-shadow(0 0 150px #F897E9EA);*/
+  }
+  to {
+    filter: drop-shadow(0 0 5px #F897E9EA)
+            drop-shadow(0 0 10px #F897E9EA)
+            drop-shadow(0 0 15px #fff)
+            drop-shadow(0 0 20px #F897E9EA)
+            drop-shadow(0 0 35px #F897E9EA)
+            drop-shadow(0 0 40px #F897E9EA)
+            /*drop-shadow(0 0 50px #F897E9EA)
+            drop-shadow(0 0 75px #F897E9EA);*/
+  }
 }
 
 header {
@@ -479,6 +551,7 @@ button.bg-aquamarine:hover {
     background-color: rgba(138, 238, 216, 0.24);
     margin: 0;
     padding: 0;
+    box-shadow: 0 4px 15px 0 rgba(31, 38, 135, 0.1);
 }
 
 .bg-blue-gray-transparent {
