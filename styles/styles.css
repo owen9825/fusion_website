@@ -223,8 +223,10 @@ ul.dropdown-menu {
     width: auto;
 }
 
-footer ul {
-    list-style: none;
+@media (min-width: 576px) {
+    footer ul {
+        list-style: none;
+    }
 }
 
 footer ul a {
